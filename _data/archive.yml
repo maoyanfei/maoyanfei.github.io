@@ -1,9 +1,12 @@
+- type: home
+  title: 关于我
+  url: /
 - type: dates
-  title: Dates
+  title: 个人经历
   url: /dates/
 #- type: categories
 #  title: Categories
 #  url: /categories/
 - type: tags
-  title: Tags
+  title: 个人项目
   url: /tags/
