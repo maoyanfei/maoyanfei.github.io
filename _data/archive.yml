@@ -2,11 +2,11 @@
   title: 关于我
   url: /
 - type: dates
-  title: 个人经历
+  title: 从业经历
   url: /dates/
 #- type: categories
 #  title: Categories
 #  url: /categories/
 - type: tags
-  title: 个人项目
+  title: 项目经历
   url: /tags/
