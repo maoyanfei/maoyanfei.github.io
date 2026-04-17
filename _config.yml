@@ -15,6 +15,16 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Pagination settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title_suffix: ' - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 # Optimize Jekyll
 exclude:
   - .editorconfig

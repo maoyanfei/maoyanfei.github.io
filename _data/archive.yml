@@ -4,9 +4,9 @@
 - type: dates
   title: 从业经历
   url: /dates/
-#- type: categories
-#  title: Categories
-#  url: /categories/
+- type: posts
+  title: Posts
+  url: /posts/
 - type: tags
   title: 项目经历
   url: /tags/
