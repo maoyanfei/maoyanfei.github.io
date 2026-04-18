@@ -4,4 +4,11 @@ layout: default
 
 {% include home-header.html %}
 
+{% assign about_page = site.pages | where: "name", "about.md" | first %}
+{% if about_page %}
+<div class="about-section">
+  {{ about_page.content }}
+</div>
+{% endif %}
+
 
