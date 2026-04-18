@@ -21,9 +21,41 @@
   margin-right: auto;
   margin-left: auto;
   animation: rotate 20s linear infinite;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.avatar-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(2px);
+  
+  .play-icon,
+  .pause-icon {
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
   
   &:hover {
-    animation-play-state: paused;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 

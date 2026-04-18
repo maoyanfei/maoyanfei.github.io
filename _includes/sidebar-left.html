@@ -6,7 +6,19 @@
       {%- else -%}
         {%- assign avatar = site.avatar | relative_url -%}
       {%- endif -%}
-      <img src="{{ avatar }}" class="avatar-image" alt="{{ site.author.name }}" id="avatar-preview-trigger" style="cursor: pointer;">
+      
+      <!-- Background Music -->
+      <audio id="background-music" loop preload="auto">
+        <source src="{{ '/assets/mp3/background.mp3' | relative_url }}" type="audio/mpeg">
+      </audio>
+      
+      <div class="avatar-container" id="avatar-container">
+        <img src="{{ avatar }}" class="avatar-image" alt="{{ site.author.name }}" id="avatar-preview-trigger" style="cursor: pointer;">
+        <div class="avatar-play-button" id="avatar-play-button">
+          <span class="play-icon">▶</span>
+          <span class="pause-icon" style="display: none;">❚❚</span>
+        </div>
+      </div>
     </div>
     
     <!-- Avatar Preview Modal -->
