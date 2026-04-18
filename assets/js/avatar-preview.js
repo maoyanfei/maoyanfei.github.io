@@ -9,6 +9,30 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Background Music Auto Play
   if (backgroundMusic) {
+    // Ensure loop is set
+    backgroundMusic.loop = true;
+    backgroundMusic.volume = 0.5; // Set volume to 50%
+    
+    // Add event listeners for debugging
+    backgroundMusic.addEventListener('ended', function() {
+      console.log('Music ended - this should not happen with loop enabled');
+      // Restart music if it ended unexpectedly
+      backgroundMusic.play().catch(e => console.error('Failed to restart music:', e));
+    });
+    
+    backgroundMusic.addEventListener('error', function(e) {
+      console.error('Audio error:', e);
+      console.error('Error code:', backgroundMusic.error ? backgroundMusic.error.code : 'unknown');
+    });
+    
+    backgroundMusic.addEventListener('pause', function() {
+      console.log('Music paused');
+    });
+    
+    backgroundMusic.addEventListener('play', function() {
+      console.log('Music playing');
+    });
+    
     // Try to autoplay music
     const playPromise = backgroundMusic.play();
     

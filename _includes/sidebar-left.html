@@ -8,8 +8,9 @@
       {%- endif -%}
       
       <!-- Background Music -->
-      <audio id="background-music" loop preload="auto">
+      <audio id="background-music" loop preload="auto" playsinline webkit-playsinline>
         <source src="{{ '/assets/mp3/background.mp3' | relative_url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
       </audio>
       
       <div class="avatar-container" id="avatar-container">

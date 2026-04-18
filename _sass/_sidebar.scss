@@ -28,6 +28,17 @@
   display: inline-block;
   width: 100%;
   text-align: center;
+  transform: translateY(-6em);
+}
+
+@media (max-width: $md-width) {
+  .avatar-image {
+    width: 35%;
+  }
+  
+  .avatar-container {
+    transform: translateY(-4.5em);
+  }
 }
 
 .avatar-play-button {
@@ -131,7 +142,7 @@
 
 @media (max-width: $md-width) {
   .avatar-image {
-    width: 15%;
+    width: 50%;
   }
 }
 
