@@ -6,7 +6,15 @@
       {%- else -%}
         {%- assign avatar = site.avatar | relative_url -%}
       {%- endif -%}
-      <img src="{{ avatar }}" class="avatar-image" alt="{{ site.author.name }}">
+      <img src="{{ avatar }}" class="avatar-image" alt="{{ site.author.name }}" id="avatar-preview-trigger" style="cursor: pointer;">
+    </div>
+    
+    <!-- Avatar Preview Modal -->
+    <div id="avatar-modal" class="avatar-modal" style="display: none;">
+      <div class="avatar-modal-content">
+        <span class="avatar-modal-close">&times;</span>
+        <img src="{{ avatar }}" class="avatar-modal-image" alt="{{ site.author.name }}">
+      </div>
     </div>
   {%- endif %}
   <div class="masthead-title">

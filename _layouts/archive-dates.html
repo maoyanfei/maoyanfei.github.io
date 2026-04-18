@@ -6,7 +6,15 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+{%- assign all_posts = site.posts -%}
+{%- assign work_posts = "" | split: "" -%}
+{%- for post in all_posts -%}
+  {%- if post.categories contains "work" or post.category == "work" -%}
+    {%- assign work_posts = work_posts | push: post -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign taxonomies = work_posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
 
 <div class="taxonomies-wrapper">
   <ul class="taxonomies">
@@ -22,7 +30,7 @@ layout: default
   </ul>
 </div>
 
-{% comment %} Show posts by taxonomy {% endcomment %}
+{% comment %} Show work posts by date {% endcomment %}
 {%- for taxonomy in taxonomies -%}
   <h2 id="{{ taxonomy.name }}">
     {{ taxonomy.name }}
