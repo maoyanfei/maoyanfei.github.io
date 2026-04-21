@@ -10,6 +10,6 @@
 - type: posts
   title: 朋友圈
   url: /posts/
-- type: categories
-  title: 笔记
-  url: /categories/
+# - type: categories
+#   title: 笔记
+#   url: /categories/

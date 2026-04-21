@@ -21,6 +21,7 @@
   margin-right: auto;
   margin-left: auto;
   animation: rotate 20s linear infinite;
+  animation-play-state: paused; // 初始状态暂停旋转
 }
 
 .avatar-container {

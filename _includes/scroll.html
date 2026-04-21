@@ -14,7 +14,7 @@
     window.scrollTo({
       left: 0, 
       top: window.innerHeight,
-      behavior: 'smooth'
+      behavior: 'auto'  // 改为 auto，避免闪烁
     });
     sessionStorage.removeItem('forceCheckScroll');
   }

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const playButton = document.getElementById('avatar-play-button');
   const backgroundMusic = document.getElementById('background-music');
   
-  // Background Music Auto Play
+  // Background Music - Initial state is paused
   if (backgroundMusic) {
     // Ensure loop is set
     backgroundMusic.loop = true;
@@ -33,25 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Music playing');
     });
     
-    // Try to autoplay music
-    const playPromise = backgroundMusic.play();
-    
-    if (playPromise !== undefined) {
-      playPromise.then(_ => {
-        // Autoplay started successfully
-        console.log('Background music started playing');
-      }).catch(error => {
-        // Autoplay was prevented
-        console.log('Autoplay prevented, waiting for user interaction');
-        // Add a one-time click listener to start music
-        document.addEventListener('click', function startMusic() {
-          backgroundMusic.play().then(() => {
-            console.log('Background music started after user interaction');
-          }).catch(e => console.error('Failed to play music:', e));
-          document.removeEventListener('click', startMusic);
-        }, { once: true });
-      });
-    }
+    // Initial state: music is paused, show play icon
+    console.log('Background music initialized in paused state');
   }
   
   if (avatarTrigger && avatarModal) {
@@ -89,36 +72,66 @@ document.addEventListener('DOMContentLoaded', function() {
     const avatarImage = avatarContainer.querySelector('.avatar-image');
     const playIcon = playButton.querySelector('.play-icon');
     const pauseIcon = playButton.querySelector('.pause-icon');
-    let isPlaying = true;
+    let isPlaying = false; // Initial state: music is paused
     
-    // 初始化：因为图片默认在旋转，音乐也在播放，所以显示暂停图标
-    playIcon.style.display = 'none';
-    pauseIcon.style.display = 'inline';
+    // 初始化：隐藏播放按钮，等待音频加载完成
+    playButton.style.display = 'none';
+    
+    // 监听音频加载完成事件
+    if (backgroundMusic) {
+      // 如果音频已经加载完成（可能已缓存）
+      if (backgroundMusic.readyState >= 2) {
+        playButton.style.display = 'flex';
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+        // 音频已加载，开始旋转头像
+        avatarImage.style.setProperty('animation-play-state', 'running', 'important');
+        console.log('Background music already loaded, avatar rotation started');
+      } else {
+        // 监听 canplaythrough 事件，表示音频已完全加载可以流畅播放
+        backgroundMusic.addEventListener('canplaythrough', function() {
+          playButton.style.display = 'flex';
+          playIcon.style.display = 'inline';
+          pauseIcon.style.display = 'none';
+          // 音频加载成功，开始旋转头像
+          avatarImage.style.setProperty('animation-play-state', 'running', 'important');
+          console.log('Background music loaded successfully, avatar rotation started');
+        }, { once: true });
+        
+        // 监听错误事件，如果加载失败则不显示按钮
+        backgroundMusic.addEventListener('error', function(e) {
+          console.error('Background music failed to load, button will not be shown');
+          console.error('Error code:', backgroundMusic.error ? backgroundMusic.error.code : 'unknown');
+          // 保持按钮隐藏状态，头像也不旋转
+          playButton.style.display = 'none';
+          avatarImage.style.setProperty('animation-play-state', 'paused', 'important');
+          console.log('Avatar rotation remains paused due to music load failure');
+        }, { once: true });
+      }
+    }
     
     playButton.addEventListener('click', function(event) {
       event.preventDefault();
       event.stopPropagation();
       
       if (isPlaying) {
-        // Pause rotation and music
-        avatarImage.style.setProperty('animation-play-state', 'paused', 'important');
+        // Pause music only (keep avatar rotating)
         if (backgroundMusic) {
           backgroundMusic.pause();
         }
         playIcon.style.display = 'inline';
         pauseIcon.style.display = 'none';
         isPlaying = false;
-        console.log('Avatar rotation and music paused');
+        console.log('Music paused, avatar keeps rotating');
       } else {
-        // Resume rotation and music
-        avatarImage.style.setProperty('animation-play-state', 'running', 'important');
+        // Play music only (don't affect avatar rotation)
         if (backgroundMusic) {
           backgroundMusic.play().catch(e => console.error('Failed to play music:', e));
         }
         playIcon.style.display = 'none';
         pauseIcon.style.display = 'inline';
         isPlaying = true;
-        console.log('Avatar rotation and music resumed');
+        console.log('Music playing, avatar keeps rotating');
       }
     });
   }
