@@ -86,9 +86,35 @@
 </div>
 
       <div class="content pure-u-1 pure-u-md-1-2"><main>
-  <article class="page">
-  <h1 class="page-title">About</h1>
-  <h1 id="-about-me--我的个人简介">👋 About Me · 我的个人简介</h1>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/about/" class="pure-menu-link current-item"">简介</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/dates/" class="pure-menu-link "">从业</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/tags/" class="pure-menu-link "">项目</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/posts/" class="pure-menu-link "">那年今日</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<article class="page">
+  <!-- <h1 class="page-title">About</h1> -->
+  <h1 id="-about-me--个人简介">👋 About Me · 个人简介</h1>
 <blockquote>
   <p>间歇性努力，持续性趣事频发，一个认真又不那么正经的普通人。</p>
 </blockquote>
@@ -97,11 +123,11 @@
 
 <h2 id="‍-基本信息">🧑‍💻 基本信息</h2>
 <ul>
-  <li><strong>姓名 / 别名 / 昵称。。。</strong>：毛艳飞/毛鹏飞/毛大飞/毛/大毛/小毛/大鹏/毛老师/毛工/Mo桑/YanfeiMao</li>
-  <li><strong>大区</strong>：洛阳市 / 洛龙区</li>
+  <li><strong>姓名 / 别名 / 昵称。。。</strong>：毛艳飞 <span class="hint-icon" onclick="toggleHint(event, this)" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">毛鹏飞/毛大飞/毛/大毛/小毛/大鹏/毛老师/毛工/Mo桑/YanfeiMao 神通千面，叫啥都行~</span></li>
+  <li><strong>大区</strong>：洛阳市</li>
   <li><strong>性别</strong>：男</li>
-  <li><strong>年龄</strong>：加V告诉你（bulabulamao）</li>
-  <li><strong>身份</strong>：程序猿 / 攻城狮 / BUG 资深收藏家</li>
+  <li><strong>年龄</strong>：持续更新中</li>
+  <li><strong>身份</strong>：程序猿/攻城狮/BUG资深收藏家 <span class="hint-icon" onclick="toggleHint(event, this)" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">河南大学/计算机与信息工程学院/软件工程专业</span></li>
   <li><strong>说说</strong>：无所谓，我会出手</li>
 </ul>
 
@@ -109,44 +135,150 @@
 
 <h2 id="-人设标签">🎨 人设标签</h2>
 <ul>
-  <li>🎧 喜欢听歌，不是爱好也不是兴趣，习惯而已</li>
+  <li>🎧 喜欢听歌，远不止是兴趣爱好，习惯使然 <span class="hint-icon" onclick="toggleHint(event, this)" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">网抑云十年以上常驻村民</span></li>
   <li>🤪 日常都很认真地在严肃，心情值&gt;50%开始搞抽象</li>
   <li>🐢 擅长龟息大法但脑子超快能力超强</li>
-  <li>🎯</li>
+  <li>🎯 喜欢提前规划，有掌控感会感到舒服<span class="hint-icon" onclick="toggleHint(event, this)" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">金牛座特色</span></li>
 </ul>
+
+<style>
+.hint-text.show {
+  display: inline-block !important;
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+
+<script>
+function toggleHint(event, icon) {
+  event.stopPropagation();
+  var hintText = icon.nextElementSibling;
+  hintText.classList.toggle('show');
+}
+
+document.addEventListener('click', function(event) {
+  var allHints = document.querySelectorAll('.hint-text');
+  allHints.forEach(function(hint) {
+    if (!hint.previousElementSibling.contains(event.target)) {
+      hint.classList.remove('show');
+    }
+  });
+});
+</script>
 
 <hr />
 
-<h2 id="-博客里都有啥">📚 博客里都有啥</h2>
+<h2 id="-这里都有啥">📚 这里都有啥</h2>
 <ul>
-  <li>学习笔记 &amp; 踩坑实录</li>
-  <li>技术/生活/感悟碎碎念</li>
-  <li>偶尔干货，偶尔废话，长期随缘更新</li>
-  <li>不高产，但尽量不水</li>
+  <li>一些个人简介</li>
+  <li>丰富的从业经历 <span class="hint-icon" onclick="toggleHint(event, this)" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">丰富不代表缺乏忠诚与责任感，职业道德和方向选择本不冲突</span></li>
+  <li>参与或负责过的项目 <span class="hint-icon" onclick="toggleHint(event, this)" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">项目是充实各行业知识的入口</span></li>
+  <li>奇奇怪怪的那年今日</li>
 </ul>
 
 <hr />
 
 <h2 id="️-略懂略懂">🛠️ 略懂略懂</h2>
 <ul>
-  <li>能写点代码，也能写点文案</li>
-  <li>会排版，会折腾，会自己跟自己较劲</li>
-  <li>擅长把复杂的东西讲得简单好懂</li>
+  <li>吃饭的家伙什（敲代码）是不可能丢的</li>
+  <li>懂些管理知识，能从管理的角度思考问题</li>
+  <li>有一些英语听说读写上的优势</li>
+  <li>复杂业务理解和产品质量保证能力一流</li>
 </ul>
 
 <hr />
 
 <h2 id="-找我唠嗑">📬 找我唠嗑</h2>
 <ul>
-  <li>GitHub：<strong>__</strong><em>__</em></li>
-  <li>邮箱：<strong>__</strong><em>__</em></li>
-  <li>其他平台：<strong>__</strong><em>__</em></li>
+  <li>微信：<span class="copyable-text" data-value="bulabulamao" onclick="copyText(this, 'wechat-hint')" style="cursor: pointer; color: #4a90e2; font-weight: bold; border-bottom: 1px dashed #4a90e2;">bulabulamao</span> <span id="wechat-hint" class="copy-hint">👌已复制</span></li>
+  <li>QQ：<span class="copyable-text" data-value="415850136" onclick="copyText(this, 'qq-hint')" style="cursor: pointer; color: #4a90e2; font-weight: bold; border-bottom: 1px dashed #4a90e2;">415850136</span> <span id="qq-hint" class="copy-hint">👌已复制</span></li>
 </ul>
+
+<script>
+function copyText(element, hintId) {
+  const text = element.getAttribute('data-value');
+  
+  // 使用现代 Clipboard API
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showHint(hintId);
+    }).catch(err => {
+      console.error('复制失败:', err);
+      fallbackCopy(text, hintId);
+    });
+  } else {
+    // 降级方案
+    fallbackCopy(text, hintId);
+  }
+}
+
+function fallbackCopy(text, hintId) {
+  const tempInput = document.createElement('input');
+  tempInput.value = text;
+  tempInput.style.position = 'fixed';
+  tempInput.style.left = '-9999px';
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  
+  try {
+    document.execCommand('copy');
+    showHint(hintId);
+  } catch (err) {
+    console.error('复制失败:', err);
+    alert('复制失败，请手动复制');
+  }
+  
+  document.body.removeChild(tempInput);
+}
+
+function showHint(hintId) {
+  const hint = document.getElementById(hintId);
+  if (hint) {
+    hint.classList.add('show');
+    setTimeout(() => {
+      hint.classList.remove('show');
+    }, 2000);
+  }
+}
+</script>
+
+<style>
+.copyable-text {
+  transition: all 0.3s ease;
+  user-select: none;
+}
+.copyable-text:hover {
+  color: #1890ff;
+  border-bottom-color: #1890ff;
+}
+.copyable-text:active {
+  transform: scale(0.98);
+}
+.copy-hint {
+  display: none;
+  color: #c41aad;
+  font-size: 14px;
+  margin-left: 8px;
+}
+.copy-hint.show {
+  display: inline-block;
+  animation: fadeInOut 2s ease-in-out;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+</style>
 
 <hr />
 
 <blockquote>
-  <p>✨ 感谢来访，愿你今天开心，明天更开心。</p>
+  <p>✨ 😊 感谢来访，恭喜你解锁新了解一人成就。 🌟</p>
 </blockquote>
 
 </article>
