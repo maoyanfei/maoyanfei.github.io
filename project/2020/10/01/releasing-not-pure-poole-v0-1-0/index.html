@@ -77,17 +77,34 @@
   </nav><div class="social pure-menu pure-menu-horizontal">
       <ul class="social-icons pure-menu-list">
       <li class="pure-menu-item">
-          <a class="social-icon pure-menu-link" href="mailto://415850136@qq.com">
+          <a class="social-icon pure-menu-link" href="/assets/images/wechat-qr.jpg" data-qr-code="true">
+            <i class="fab fa-weixin" title="Wechat"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="/assets/images/qq-qr.jpg" data-qr-code="true">
+            <i class="fab fa-qq" title="QQ"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto://415850136@qq.com" >
             <i class="fas fa-envelope" title="Email"></i>
           </a>
         </li><li class="pure-menu-item">
-          <a class="social-icon pure-menu-link" href="https://github.com/maoyanfei">
+          <a class="social-icon pure-menu-link" href="https://github.com/maoyanfei" >
             <i class="fab fa-github" title="GitHub"></i>
           </a>
         </li>
       </ul>
     </div>
 </header>
+
+<!-- QR Code Modal -->
+<div id="qr-modal" class="qr-modal" style="display: none;">
+  <div class="qr-modal-content">
+    <span class="qr-modal-close">&times;</span>
+    <img src="" class="qr-modal-image" alt="QR Code">
+    <p class="qr-modal-title"></p>
+  </div>
+</div>
 </div>
 
       <div class="content pure-u-1 pure-u-md-1-2"><main>
@@ -200,5 +217,6 @@
     }
   }
 </script>
-</body>
+<script src="/assets/js/avatar-preview.js"></script>
+    <script src="/assets/js/qr-code-modal.js"></script></body>
 </html>

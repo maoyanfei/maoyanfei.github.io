@@ -64,6 +64,12 @@
         
         console.log('🔗 Link clicked:', href, 'Event type:', e.type);
         
+        // Skip QR code links (handled by qr-code-modal.js)
+        if (link.hasAttribute('data-qr-code')) {
+          console.log('⏭️ Skipping QR code link');
+          return;
+        }
+        
         // Skip external links, mailto, anchors, etc.
         if (href.startsWith('http') || 
             href.startsWith('mailto:') || 
@@ -99,6 +105,12 @@
         const touchTarget = e.target.closest('a');
         if (touchTarget) {
           const href = touchTarget.getAttribute('href');
+          
+          // Skip QR code links
+          if (touchTarget.hasAttribute('data-qr-code')) {
+            console.log('⏭️ Skipping QR code link on touch');
+            return;
+          }
           
           // Check if it's an internal link before preventing default
           if (href && !href.startsWith('http') && !href.startsWith('mailto:') && 
@@ -312,6 +324,11 @@
       // Re-initialize avatar preview and music controls
       if (typeof initializeAvatarAndMusic === 'function') {
         initializeAvatarAndMusic();
+      }
+      
+      // Re-initialize QR code modal
+      if (typeof initializeQRCodeModal === 'function') {
+        initializeQRCodeModal();
       }
       
       // Re-initialize any other dynamic features

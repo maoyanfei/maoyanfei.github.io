@@ -76,17 +76,34 @@
   </nav><div class="social pure-menu pure-menu-horizontal">
       <ul class="social-icons pure-menu-list">
       <li class="pure-menu-item">
-          <a class="social-icon pure-menu-link" href="mailto://415850136@qq.com">
+          <a class="social-icon pure-menu-link" href="/assets/images/wechat-qr.jpg" data-qr-code="true">
+            <i class="fab fa-weixin" title="Wechat"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="/assets/images/qq-qr.jpg" data-qr-code="true">
+            <i class="fab fa-qq" title="QQ"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto://415850136@qq.com" >
             <i class="fas fa-envelope" title="Email"></i>
           </a>
         </li><li class="pure-menu-item">
-          <a class="social-icon pure-menu-link" href="https://github.com/maoyanfei">
+          <a class="social-icon pure-menu-link" href="https://github.com/maoyanfei" >
             <i class="fab fa-github" title="GitHub"></i>
           </a>
         </li>
       </ul>
     </div>
 </header>
+
+<!-- QR Code Modal -->
+<div id="qr-modal" class="qr-modal" style="display: none;">
+  <div class="qr-modal-content">
+    <span class="qr-modal-close">&times;</span>
+    <img src="" class="qr-modal-image" alt="QR Code">
+    <p class="qr-modal-title"></p>
+  </div>
+</div>
 </div>
 
       <div class="content pure-u-1 pure-u-md-1-2"><main>
@@ -127,7 +144,7 @@
 
 <h2 id="‍-基本信息">🧑‍💻 基本信息</h2>
 <ul>
-  <li><strong>姓名 / 别名 / 昵称。。。</strong>：毛艳飞 <span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">毛鹏飞/毛大飞/毛/大毛/小毛/大鹏/毛老师/毛工/Mo桑/YanfeiMao 神通千面，叫啥都行~</span></li>
+  <li><strong>姓名</strong>：毛艳飞 <span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">神通千面，叫啥都行~毛鹏飞/毛大飞/毛/大毛/小毛/大鹏/毛老师/毛工/Mo桑/YanfeiMao</span></li>
   <li><strong>大区</strong>：洛阳市</li>
   <li><strong>性别</strong>：男</li>
   <li><strong>年龄</strong>：持续更新中</li>
@@ -161,8 +178,8 @@
 <h2 id="-这里都有啥">📚 这里都有啥</h2>
 <ul>
   <li>一些个人简介</li>
-  <li>丰富的从业经历 <span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">丰富不代表缺乏忠诚与责任感，职业道德和方向选择本不冲突</span></li>
-  <li>参与或负责过的项目 <span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">项目是充实各行业知识的入口</span></li>
+  <li>丰富的从业经历 <span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">丰富不代表缺乏忠诚与责任感，坚守职业道德和自我并不冲突</span></li>
+  <li>参与或负责过的项目 <span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">强大的业务能力得益于于从项目中学习并积累的各行业知识</span></li>
   <li>奇奇怪怪的那年今日</li>
 </ul>
 
@@ -170,10 +187,10 @@
 
 <h2 id="️-略懂略懂">🛠️ 略懂略懂</h2>
 <ul>
-  <li>吃饭的家伙什（敲代码）是不可能丢的</li>
+  <li>吃饭的家伙什是不可能丢的<span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">术业有专攻，专业的人做专业的事</span></li>
   <li>懂些管理知识，能从管理的角度思考问题</li>
   <li>有一些英语听说读写上的优势</li>
-  <li>复杂业务理解和产品质量保证能力一流</li>
+  <li>团队中的发动机，破局者手中的利刃<span class="hint-icon" style="cursor: pointer; color: #4a90e2; font-weight: bold;">📌</span><span class="hint-text" style="display: none; background: #f0f0f0; border-radius: 6px; margin-left: 8px; font-size: 14px; color: #333;">用过的都说好</span></li>
 </ul>
 
 <hr />
@@ -265,7 +282,7 @@ function showHint(hintId) {
 <hr />
 
 <blockquote>
-  <p>✨ 😊 感谢来访，恭喜你解锁新了解一人成就。 🌟</p>
+  <p>😊 感谢来访，恭喜你已解锁新了解一人成就✨</p>
 </blockquote>
 
 </article>
@@ -322,5 +339,6 @@ function showHint(hintId) {
     }
   }
 </script>
-</body>
+<script src="/assets/js/avatar-preview.js"></script>
+    <script src="/assets/js/qr-code-modal.js"></script></body>
 </html>
