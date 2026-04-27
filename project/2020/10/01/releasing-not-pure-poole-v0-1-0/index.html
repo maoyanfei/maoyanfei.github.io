@@ -14,8 +14,8 @@
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="The Jekyll theme Not Pure Poole v0.1.0 was released!" />
 <meta property="og:description" content="The Jekyll theme Not Pure Poole v0.1.0 was released!" />
-<link rel="canonical" href="http://0.0.0.0:8080/project/2020/10/01/releasing-not-pure-poole-v0-1-0/" />
-<meta property="og:url" content="http://0.0.0.0:8080/project/2020/10/01/releasing-not-pure-poole-v0-1-0/" />
+<link rel="canonical" href="http://localhost:4000/project/2020/10/01/releasing-not-pure-poole-v0-1-0/" />
+<meta property="og:url" content="http://localhost:4000/project/2020/10/01/releasing-not-pure-poole-v0-1-0/" />
 <meta property="og:site_name" content="毛艳飞" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-01T13:56:00+08:00" />
@@ -25,9 +25,9 @@
 <meta name="twitter:creator" content="@Songzi Vong" />
 <meta name="google-site-verification" content="xxxxx" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Songzi Vong"},"dateModified":"2020-10-01T13:56:00+08:00","datePublished":"2020-10-01T13:56:00+08:00","description":"The Jekyll theme Not Pure Poole v0.1.0 was released!","headline":"Releasing Not Pure Poole v0.1.0","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:8080/project/2020/10/01/releasing-not-pure-poole-v0-1-0/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:8080/logo.png"},"name":"Songzi Vong"},"url":"http://0.0.0.0:8080/project/2020/10/01/releasing-not-pure-poole-v0-1-0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Songzi Vong"},"dateModified":"2020-10-01T13:56:00+08:00","datePublished":"2020-10-01T13:56:00+08:00","description":"The Jekyll theme Not Pure Poole v0.1.0 was released!","headline":"Releasing Not Pure Poole v0.1.0","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/project/2020/10/01/releasing-not-pure-poole-v0-1-0/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"},"name":"Songzi Vong"},"url":"http://localhost:4000/project/2020/10/01/releasing-not-pure-poole-v0-1-0/"}</script>
 <!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:8080/feed.xml" title="毛艳飞" />
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="毛艳飞" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <!-- PJAX for seamless page transitions (keeps music playing) -->
@@ -39,6 +39,9 @@
 
 
   <body>
+
+    <!-- Snow Effect Container -->
+    <div id="snow-container"></div>
 
     <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/bg.jpeg);"><header class="masthead">
   <div class="avatar"><!-- Background Music -->
@@ -68,13 +71,7 @@
   </div>
   <div class="masthead-tagline">
     <small>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</small>
-  </div><nav class="navigation">
-    <ul class="navigation-list"><li class="navigation-item">
-        <a href="/">关于我</a>
-      </li><li class="navigation-item">
-        <a href="/about/">个人经历</a>
-      </li></ul>
-  </nav><div class="social pure-menu pure-menu-horizontal">
+  </div><div class="social pure-menu pure-menu-horizontal">
       <ul class="social-icons pure-menu-list">
       <li class="pure-menu-item">
           <a class="social-icon pure-menu-link" href="/assets/images/wechat-qr.jpg" data-qr-code="true">
@@ -85,7 +82,7 @@
             <i class="fab fa-qq" title="QQ"></i>
           </a>
         </li><li class="pure-menu-item">
-          <a class="social-icon pure-menu-link" href="mailto://415850136@qq.com" >
+          <a class="social-icon pure-menu-link" href="mailto:415850136@qq.com" >
             <i class="fas fa-envelope" title="Email"></i>
           </a>
         </li><li class="pure-menu-item">
@@ -218,5 +215,6 @@
   }
 </script>
 <script src="/assets/js/avatar-preview.js"></script>
-    <script src="/assets/js/qr-code-modal.js"></script></body>
+    <script src="/assets/js/qr-code-modal.js"></script>
+    <script src="/assets/js/snow.js"></script></body>
 </html>
