@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-04-28T20:52:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">Testing MathJax</title><link href="http://localhost:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://localhost:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-04-29T00:02:31+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">Testing MathJax</title><link href="http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
 
 <p>An inline math: \(E=mc^2\).</p>
 
 <p>A display math:</p>
 
 \[i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
-\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="note" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://localhost:4000/moment/2020/10/02/testing-mathjax/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://localhost:4000/moment/2020/10/02/testing-mathjax</id><content type="html" xml:base="http://localhost:4000/moment/2020/10/02/testing-mathjax/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
+\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="note" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://0.0.0.0:4000/moment/2020/10/02/testing-mathjax/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://0.0.0.0:4000/moment/2020/10/02/testing-mathjax</id><content type="html" xml:base="http://0.0.0.0:4000/moment/2020/10/02/testing-mathjax/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
 
 <p>An inline math: \(E=mc^2\).</p>
 
 <p>A display math:</p>
 
 \[i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
-\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="moment" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Welcome to Not Pure Poole</title><link href="http://localhost:4000/work/2020/09/29/welcome-to-not-pure-poole/" rel="alternate" type="text/html" title="Welcome to Not Pure Poole" /><published>2020-09-29T23:18:00+08:00</published><updated>2020-10-01T01:08:25+08:00</updated><id>http://localhost:4000/work/2020/09/29/welcome-to-not-pure-poole</id><content type="html" xml:base="http://localhost:4000/work/2020/09/29/welcome-to-not-pure-poole/"><![CDATA[<p class="message">Welcome to <strong>Not Pure Poole</strong>! This is an example post to show the layout.</p>
+\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="moment" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Welcome to Not Pure Poole</title><link href="http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole/" rel="alternate" type="text/html" title="Welcome to Not Pure Poole" /><published>2020-09-29T23:18:00+08:00</published><updated>2020-10-01T01:08:25+08:00</updated><id>http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole</id><content type="html" xml:base="http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole/"><![CDATA[<p class="message">Welcome to <strong>Not Pure Poole</strong>! This is an example post to show the layout.</p>
 
 <p>First, do you notice the TOC on the right side? Try to scroll down to read this post, you’ll find that the TOC is always sticky in the viewport.</p>
 
@@ -186,42 +186,76 @@
       <p>Handy! Now click the return link to go back. <a href="#fnref:fn-sample_footnote" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="work" /><category term="jekyll theme" /><category term="jekyll" /><category term="tutorial" /><summary type="html"><![CDATA[Welcome to Not Pure Poole! This is an example post to show the layout.]]></summary></entry><entry><title type="html">安哥拉国家税务稽查系统</title><link href="http://localhost:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="安哥拉国家税务稽查系统" /><published>2018-06-06T00:00:00+08:00</published><updated>2018-06-06T00:00:00+08:00</updated><id>http://localhost:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/"><![CDATA[<p>线上地址：<a>https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada</a></p>
+</div>]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="work" /><category term="jekyll theme" /><category term="jekyll" /><category term="tutorial" /><summary type="html"><![CDATA[Welcome to Not Pure Poole! This is an example post to show the layout.]]></summary></entry><entry><title type="html">安哥拉国家税务稽查系统（SIGT）</title><link href="http://0.0.0.0:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="安哥拉国家税务稽查系统（SIGT）" /><published>2018-06-06T00:00:00+08:00</published><updated>2018-06-06T00:00:00+08:00</updated><id>http://0.0.0.0:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://0.0.0.0:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/"><![CDATA[<p><em>访问地址</em></p>
 
-<p>系统预览：<img src="/assets/images/AngolaTaxInspection.png" /></p>
+<p><a href="https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada" target="_blank" rel="noopener noreferrer">https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada</a></p>
 
-<p>📌 项目基础信息
-项目名称：安哥拉国家税务稽查系统
-项目属性：电子政务核心业务系统
-建设背景：安哥拉国家税务稽查纸质业务电子化
-参与项目时间段：项目前中期（）
-协作团队：后端、前端、产品、测试、运维多角色协同
-简单概括
-区别于普通 OA 办公系统、企业 ERP 管理系统，
-属于政务专属行业业务平台，服务税务日常征管、企业办税、数据监管全流程。
-🧾 项目背景 &amp; 业务痛点
-以往线下流程多、分散系统杂乱、数据不互通，企业办税繁琐、人工审核量大、征管效率偏低。
-为适配金税体系数字化改造，统一搭建一体化线上办税与征管平台，整合申报、发票、征管、风控、查询等全业务能力，实现业务线上化、数据集中化、监管智能化。
-⚙️ 整体技术架构
-项目依托金税标准技术体系，采用分布式微服务云原生架构
-整体架构：云端部署 + 微服务 + 容器化运维
-数据能力：大数据汇聚、多部门数据对接、统一数据治理
-中间件：服务注册发现、消息队列、缓存、网关统一管控
-数据库：国产数据库为主，分库分表，保障高并发与数据安全
-安全体系：政务等保规范、内外网隔离、权限分级、操作日志审计
-👨‍💻 我的负责内容 &amp; 核心职责
-全程深度参与业务开发与迭代，不做边缘打杂，主要负责：
-业务需求梳理与方案落地对接业务、产品，梳理税务复杂业务流程，拆解需求，评估开发风险，避免后期返工。
-核心业务模块开发独立负责征管、申报、业务查询等核心模块编码开发，优化老旧业务逻辑，修复历史遗留问题，提升系统稳定性。
-接口开发与多方联调对内提供业务接口，对接前端、内部其他子系统；对外配合跨政务部门数据对接、参数适配、格式统一。
-问题排查与版本保障参与日常测试、迭代上线、节假日业务高峰期保障，快速修复线上问题，保证政务系统稳定不间断运行。
-文档整理与经验沉淀整理业务流程文档、接口说明、常见问题记录，方便团队后续维护和新人接手，减少沟通成本。
-📈 项目成果 &amp; 业务价值
-整合碎片化业务，统一办税与征管入口，流程更顺畅
-减少大量人工线下操作，提升税务人员办公效率
-规范业务数据口径，强化数据监管与风险预警能力
-系统长期稳定运行，顺利通过验收并常态化迭代使用
-💡 个人收获
-第一次深度接触大型电子政务级项目，见识了高安全、高规范、高稳定性要求下的开发标准。
-学会了复杂政务业务梳理、微服务协同开发、严格的流程规范与上线管控，对大型分布式系统、政务项目开发模式有了完整认知，技术和业务理解都收获很大。
-✨ 项目存档小结该系统不属于 OA、不属于传统企业 ERP，是标准的税务行业电子政务核心业务平台，也是我职业生涯中很有代表性的一段实战经历。</p>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="电子政务" /><summary type="html"><![CDATA[线上地址：https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada]]></summary></entry></feed>
+<p><strong>系统预览</strong></p>
+
+<p><img src="/assets/images/AngolaTaxInspection.png" alt="SIGT" /></p>
+
+<hr />
+
+<h3 id="-项目基础信息">💼 项目基础信息</h3>
+
+<p>项目名称：安哥拉国家税务稽查系统（SIGT）</p>
+
+<p>项目属性：电子政务核心业务系统</p>
+
+<p>协作团队：后端、前端、产品、测试、运维多角色协同</p>
+
+<p>项目周期：2018-2020</p>
+
+<hr />
+
+<h3 id="-项目背景">🧾 项目背景</h3>
+
+<p>安哥拉国家税务稽查系统属于安哥拉国家税务综合管理系统的核心服务模块，借鉴国家税务总局（北京）电子税务系统经验，服务于安哥拉国家税务总局（AGT），对外面向企业/个人提供在线办理税务申报、算税、查询、生成税票等功能，对内面向税务人员稽查专用，包含纳税人数据管理、申报审批、税票管理等功能。覆盖全网纳税人外网办税门户、税务内网稽查审批后台，支撑税收征管、申报稽查、多级审批全业务闭环，系统至今官方线上稳定运行。</p>
+
+<hr />
+
+<h3 id="️-技术栈">⚙️ 技术栈</h3>
+
+<p>后端：Java 8、Spring Boot</p>
+
+<p>前端：Vue2 + Element UI、Angular、ECharts</p>
+
+<p>数据库：Oracle</p>
+
+<p>中间件：Activiti、Nginx、RabbitMQ</p>
+
+<hr />
+
+<h3 id="‍-我的负责内容--核心职责">👨‍💻 我的负责内容 &amp; 核心职责</h3>
+
+<p>全程深度参与业务开发与迭代，主要负责：</p>
+
+<p>1、日常对接业务人员与产品同事，负责常规业务需求接收、梳理与落地开发，精准理解税务复杂业务流程，按规范拆解开发任务；独立负责开发纳税人资料管理、线上申报核算、税票查询、电子凭证下载归档等核心业务模块，代码规范、功能稳定，按期完成每一轮迭代开发工作。</p>
+
+<p>2、配合完成多方系统联调工作，负责编写后端标准业务接口、配合前端完成页面功能对接与适配优化；主动配合现场实施人员，完成真实业务数据对接、业务参数调试、环境适配以及上线前后测试校验，保障功能顺利投产上线、无线上问题。</p>
+
+<p>3、服从团队开发安排，配合组长完成日常开发任务执行，主动分担重点难点开发工作；日常做好代码自查优化，配合团队把控开发质量与进度；积极参与组内技术交流，复用公共组件与规范接口，稳步支撑项目多轮迭代，保障税务征管、稽查相关业务平稳运行。</p>
+
+<hr />
+
+<h3 id="-项目成果--业务价值">📈 项目成果 &amp; 业务价值</h3>
+
+<p>1、将线下办税、稽查审批全部转为线上办理，统一操作入口，简化办事流程，业务流转更顺畅。</p>
+
+<p>2、减少大量人工录入、纸质跑腿等重复工作，有效提升税务人员日常办公效率。</p>
+
+<p>3、统一规范涉税数据标准，提升后台数据监管能力，辅助异常行为风险预警。</p>
+
+<p>4、系统全程平稳运行，无线上重大问题，顺利通过官方验收，长期常态化投入正式使用。</p>
+
+<hr />
+
+<h3 id="-个人收获">💡 个人收获</h3>
+
+<p>刚毕业时（2018年6月）深度参与的大型电子政务级项目，可以说入门就见识了高安全、高规范、高稳定性要求下的开发标准，潜移默化地为我以后对工作质量的要求奠定了基础。</p>
+
+<p>但各种复杂的业务数据、核算逻辑、审批流程让我一度顾此失彼，穷于应付，好在经过百折不挠的努力，尽职尽责地胜任了所有工作，不仅学到了各种业务、技术知识，还真正的做到了让自己在工作中能够沉下心去解决各种棘手的问题。</p>
+
+<p>另外大型项目随之而来的大团队协同开发、跨团队合作、跨区域交流、信息同步、责任边界、任务推进，让我在个人软实力方面也得到了快速的提升，能够适应规范化的职场协作节奏，懂得高效同步对接、合理划分工作边界、及时上报协同攻坚，快速完成从新人到独立上手干活的职场过渡。</p>
+
+<p>不得不说这段初入职场的宝贵经历，彻底褪去了我学生时代的青涩与浮躁，也打磨出抗压攻坚、踏实肯干的职业素养，让我在后续各类工作挑战中始终保持严谨态度、从容应对，稳步实现个人专业能力与综合素养的持续成长。</p>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="电子政务" /><summary type="html"><![CDATA[访问地址]]></summary></entry></feed>
