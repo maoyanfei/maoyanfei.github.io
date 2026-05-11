@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://0.0.0.0:4000/project/2018/06/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/</loc>
-<lastmod>2018-06-06T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole/</loc>
 <lastmod>2020-10-01T01:08:25+08:00</lastmod>
 </url>
@@ -15,6 +11,14 @@
 <url>
 <loc>http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/</loc>
 <lastmod>2020-10-02T15:32:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/</loc>
+<lastmod>2026-05-06T15:11:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E5%85%A8%E7%90%83%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C/</loc>
+<lastmod>2026-05-07T16:11:00+08:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/about/</loc>
