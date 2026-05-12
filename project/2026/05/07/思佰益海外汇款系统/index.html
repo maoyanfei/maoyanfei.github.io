@@ -682,45 +682,73 @@
 <!-- </div> -->
 
 <script>
-// 打字机效果
-const text = "跨境汇款核心平台 | 赛博数据传输中...";
-const typingElement = document.getElementById('typing-text');
-let index = 0;
+// 打字机效果 - 封装为全局函数，供 PJAX 调用
+window.initTypewriterEffect = function() {
+  const text = "跨境汇款核心平台 | 赛博数据传输中...";
+  const typingElement = document.getElementById('typing-text');
+  
+  // 如果元素不存在，直接返回
+  if (!typingElement) {
+    console.log('⚠️ typing-text element not found');
+    return;
+  }
+  
+  // 清空之前的内容（防止重复执行）
+  typingElement.innerHTML = '';
+  let index = 0;
 
-function typeWriter() {
-  if (index < text.length) {
-    typingElement.innerHTML += text.charAt(index);
-    index++;
-    setTimeout(typeWriter, 100);
+  function typeWriter() {
+    if (index < text.length) {
+      typingElement.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+
+  // 延迟500ms后启动打字机效果
+  setTimeout(typeWriter, 500);
+  console.log('✅ Typewriter effect initialized');
+};
+
+// 检测是否为 PJAX 环境
+// 如果是首次加载（非 PJAX），则立即执行
+if (!window._pjaxInitialized) {
+  // 等待 DOM 完全加载后执行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(window.initTypewriterEffect, 550);
+    });
+  } else {
+    // DOM 已经加载完成
+    setTimeout(window.initTypewriterEffect, 550);
   }
 }
 
-// 页面加载完成后启动打字机效果
-window.addEventListener('load', function() {
-  setTimeout(typeWriter, 500);
-});
+// 添加鼠标移动时的粒子效果（可选）- 使用事件委托，只绑定一次
+if (!window._particleEffectInitialized) {
+  document.addEventListener('mousemove', function(e) {
+    if (Math.random() > 0.95) { // 降低频率
+      const particle = document.createElement('div');
+      particle.style.position = 'fixed';
+      particle.style.left = e.clientX + 'px';
+      particle.style.top = e.clientY + 'px';
+      particle.style.width = '4px';
+      particle.style.height = '4px';
+      particle.style.background = '#0ff';
+      particle.style.borderRadius = '50%';
+      particle.style.pointerEvents = 'none';
+      particle.style.boxShadow = '0 0 10px #0ff';
+      particle.style.zIndex = '9999';
+      document.body.appendChild(particle);
 
-// 添加鼠标移动时的粒子效果（可选）
-document.addEventListener('mousemove', function(e) {
-  if (Math.random() > 0.95) { // 降低频率
-    const particle = document.createElement('div');
-    particle.style.position = 'fixed';
-    particle.style.left = e.clientX + 'px';
-    particle.style.top = e.clientY + 'px';
-    particle.style.width = '4px';
-    particle.style.height = '4px';
-    particle.style.background = '#0ff';
-    particle.style.borderRadius = '50%';
-    particle.style.pointerEvents = 'none';
-    particle.style.boxShadow = '0 0 10px #0ff';
-    particle.style.zIndex = '9999';
-    document.body.appendChild(particle);
-
-    setTimeout(() => {
-      particle.remove();
-    }, 1000);
-  }
-});
+      setTimeout(() => {
+        particle.remove();
+      }, 1000);
+    }
+  });
+  window._particleEffectInitialized = true;
+  console.log('✅ Particle effect initialized');
+}
 </script>
 
 

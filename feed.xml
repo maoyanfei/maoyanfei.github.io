@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-05-12T22:46:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">思佰益海外汇款系统（SBI Remit）</title><link href="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="思佰益海外汇款系统（SBI Remit）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-05-13T00:11:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">思佰益海外汇款系统（SBI Remit）</title><link href="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="思佰益海外汇款系统（SBI Remit）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
 /* 赛博朋克风格样式 */
 /* .cyber-container {
   position: relative;
@@ -568,46 +568,304 @@
 <!-- </div> -->
 
 <script>
-// 打字机效果
-const text = "跨境汇款核心平台 | 赛博数据传输中...";
-const typingElement = document.getElementById('typing-text');
-let index = 0;
+// 打字机效果 - 封装为全局函数，供 PJAX 调用
+window.initTypewriterEffect = function() {
+  const text = "跨境汇款核心平台 | 赛博数据传输中...";
+  const typingElement = document.getElementById('typing-text');
+  
+  // 如果元素不存在，直接返回
+  if (!typingElement) {
+    console.log('⚠️ typing-text element not found');
+    return;
+  }
+  
+  // 清空之前的内容（防止重复执行）
+  typingElement.innerHTML = '';
+  let index = 0;
 
-function typeWriter() {
-  if (index < text.length) {
-    typingElement.innerHTML += text.charAt(index);
-    index++;
-    setTimeout(typeWriter, 100);
+  function typeWriter() {
+    if (index < text.length) {
+      typingElement.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+
+  // 延迟500ms后启动打字机效果
+  setTimeout(typeWriter, 500);
+  console.log('✅ Typewriter effect initialized');
+};
+
+// 检测是否为 PJAX 环境
+// 如果是首次加载（非 PJAX），则立即执行
+if (!window._pjaxInitialized) {
+  // 等待 DOM 完全加载后执行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(window.initTypewriterEffect, 550);
+    });
+  } else {
+    // DOM 已经加载完成
+    setTimeout(window.initTypewriterEffect, 550);
   }
 }
 
-// 页面加载完成后启动打字机效果
-window.addEventListener('load', function() {
-  setTimeout(typeWriter, 500);
-});
+// 添加鼠标移动时的粒子效果（可选）- 使用事件委托，只绑定一次
+if (!window._particleEffectInitialized) {
+  document.addEventListener('mousemove', function(e) {
+    if (Math.random() > 0.95) { // 降低频率
+      const particle = document.createElement('div');
+      particle.style.position = 'fixed';
+      particle.style.left = e.clientX + 'px';
+      particle.style.top = e.clientY + 'px';
+      particle.style.width = '4px';
+      particle.style.height = '4px';
+      particle.style.background = '#0ff';
+      particle.style.borderRadius = '50%';
+      particle.style.pointerEvents = 'none';
+      particle.style.boxShadow = '0 0 10px #0ff';
+      particle.style.zIndex = '9999';
+      document.body.appendChild(particle);
 
-// 添加鼠标移动时的粒子效果（可选）
-document.addEventListener('mousemove', function(e) {
-  if (Math.random() > 0.95) { // 降低频率
-    const particle = document.createElement('div');
-    particle.style.position = 'fixed';
-    particle.style.left = e.clientX + 'px';
-    particle.style.top = e.clientY + 'px';
-    particle.style.width = '4px';
-    particle.style.height = '4px';
-    particle.style.background = '#0ff';
-    particle.style.borderRadius = '50%';
-    particle.style.pointerEvents = 'none';
-    particle.style.boxShadow = '0 0 10px #0ff';
-    particle.style.zIndex = '9999';
-    document.body.appendChild(particle);
+      setTimeout(() => {
+        particle.remove();
+      }, 1000);
+    }
+  });
+  window._particleEffectInitialized = true;
+  console.log('✅ Particle effect initialized');
+}
+</script>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="网上银行" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">安哥拉国家税务稽查系统（SIGT）</title><link href="http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="安哥拉国家税务稽查系统（SIGT）" /><published>2026-05-06T15:11:00+08:00</published><updated>2026-05-06T15:11:00+08:00</updated><id>http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
+/* 政务系统风格样式 */
+/* .gov-container {
+  position: relative;
+} */
 
-    setTimeout(() => {
-      particle.remove();
-    }, 1000);
+/* 顶部官方标识栏 */
+.gov-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.gov-badge {
+  font-size: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.gov-title-section h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.gov-subtitle {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.95em;
+}
+
+/* 信息卡片网格 */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.info-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px);
+}
+
+.info-card .label {
+  color: #6b7280;
+  font-size: 0.85em;
+  margin-bottom: 5px;
+}
+
+.info-card .value {
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* 内容区块 */
+.gov-section {
+  background: #f9fafb;
+  border-left: 4px solid #2563eb;
+  padding: 20px 25px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gov-section h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gov-section p {
+  color: #374151;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* 职责列表 */
+.duty-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.duty-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin: 12px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.duty-item:hover {
+  border-color: #2563eb;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+  transform: translateX(5px);
+}
+
+.duty-number {
+  display: inline-block;
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+  color: white;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* 成果清单 */
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 12px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  color: #374151;
+}
+
+.achievement-item:hover {
+  background: #f0f9ff;
+  border-color: #2563eb;
+  transform: translateX(5px);
+}
+
+.check-icon {
+  color: #10b981;
+  font-size: 22px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.achievement-item div {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* 底部印章效果 */
+.gov-seal {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  border-top: 3px double #d1d5db;
+  position: relative;
+}
+
+.seal-stamp {
+  display: inline-block;
+  border: 3px solid #dc2626;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 94px;
+  text-align: center;
+  color: #dc2626;
+  font-weight: bold;
+  font-size: 1.2em;
+  transform: rotate(-15deg);
+  opacity: 0.7;
+  animation: seal-rotate 10s linear infinite;
+}
+
+@keyframes seal-rotate {
+  0%, 100% { transform: rotate(-15deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .gov-header {
+    flex-direction: column;
+    text-align: center;
   }
-});
-</script>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="网上银行" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">安哥拉国家税务稽查系统（SIGT）</title><link href="http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="安哥拉国家税务稽查系统（SIGT）" /><published>2026-05-06T15:11:00+08:00</published><updated>2026-05-06T15:11:00+08:00</updated><id>http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/"><![CDATA[<p><em>访问地址</em></p>
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gov-section {
+    padding: 15px 20px;
+  }
+}
+</style>
+
+<!-- <div class="gov-container"> -->
+
+<!-- 顶部官方标识 -->
+<div class="gov-header">
+  <div class="gov-badge">🏛️</div>
+  <div class="gov-title-section">
+    <h2>安哥拉国家税务稽查系统（SIGT）</h2>
+    <p class="gov-subtitle">电子政务核心业务系统 · 国家税务总局</p>
+  </div>
+</div>
+
+<p><em>访问地址（国外链接）</em></p>
 
 <p><a href="https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada" target="_blank" rel="noopener noreferrer">https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada</a></p>
 
@@ -619,71 +877,174 @@ document.addEventListener('mousemove', function(e) {
 
 <h3 id="-项目基础信息">💼 项目基础信息</h3>
 
-<p>项目名称：安哥拉国家税务稽查系统（SIGT）</p>
-
-<p>项目属性：电子政务核心业务系统</p>
-
-<p>协作团队：后端、前端、产品、测试、运维多角色协同</p>
-
-<p>项目周期：2018-2020</p>
-
-<hr />
-
-<h3 id="-项目背景">🧾 项目背景</h3>
-
-<p>安哥拉国家税务稽查系统属于安哥拉国家税务综合管理系统的核心服务模块，借鉴国家税务总局（北京）电子税务系统经验，服务于安哥拉国家税务总局（AGT）。</p>
-
-<p>系统对外面向企业/个人提供在线办理税务申报、算税、查询、生成税票等功能，对内面向税务人员稽查专用，包含纳税人数据管理、申报审批、税票管理等功能。</p>
-
-<p>覆盖全网纳税人外网办税门户、税务内网稽查审批后台，支撑税收征管、申报稽查、多级审批全业务闭环，系统至今官方线上稳定运行。</p>
-
-<hr />
-
-<h3 id="️-技术栈">⚙️ 技术栈</h3>
-
-<p>后端：Java 8、Spring Boot</p>
-
-<p>前端：Vue2 + Element UI、Angular、ECharts</p>
-
-<p>数据库：Oracle</p>
-
-<p>中间件：Activiti、Nginx、RabbitMQ</p>
+<div class="info-grid">
+<div class="info-card">
+    <div class="label">项目名称</div>
+    <div class="value">安哥拉国家税务稽查系统（SIGT）</div>
+  </div>
+<div class="info-card">
+    <div class="label">项目属性</div>
+    <div class="value">电子政务核心业务系统</div>
+  </div>
+<div class="info-card">
+    <div class="label">协作团队</div>
+    <div class="value">后端、前端、产品、测试、运维</div>
+  </div>
+<div class="info-card">
+    <div class="label">项目周期</div>
+    <div class="value">2018-2019</div>
+  </div>
+</div>
 
 <hr />
 
-<h3 id="‍-我的核心职责">👨‍💻 我的核心职责</h3>
+<div class="gov-section">
+  <h3 id="section">🧾 项目背景</h3>
 
-<p>全程深度参与业务开发与迭代，主要负责：</p>
+  <p>安哥拉国家税务稽查系统属于安哥拉国家税务综合管理系统的核心服务模块，借鉴国家税务总局（北京）电子税务系统经验，服务于安哥拉国家税务总局（AGT）。</p>
 
-<p>1、日常对接业务人员与产品同事，负责常规业务需求接收、梳理与落地开发，精准理解税务复杂业务流程，按规范拆解开发任务；独立负责开发纳税人资料管理、线上申报核算、税票查询、电子凭证下载归档等核心业务模块，代码规范、功能稳定，按期完成每一轮迭代开发工作。</p>
+  <p>系统对外面向企业/个人提供在线办理税务申报、算税、查询、生成税票等功能，对内面向税务人员稽查专用，包含纳税人数据管理、申报审批、税票管理等功能。</p>
 
-<p>2、配合完成多方系统联调工作，负责编写后端标准业务接口、配合前端完成页面功能对接与适配优化；主动配合现场实施人员，完成真实业务数据对接、业务参数调试、环境适配以及上线前后测试校验，保障功能顺利投产上线、无线上问题。</p>
-
-<p>3、服从团队开发安排，配合组长完成日常开发任务执行，主动分担重点难点开发工作；日常做好代码自查优化，配合团队把控开发质量与进度；积极参与组内技术交流，复用公共组件与规范接口，稳步支撑项目多轮迭代，保障税务征管、稽查相关业务平稳运行。</p>
-
-<hr />
-
-<h3 id="-项目成果--业务价值">📈 项目成果 &amp; 业务价值</h3>
-
-<p>1、将线下办税、稽查审批全部转为线上办理，统一操作入口，简化办事流程，业务流转更顺畅。</p>
-
-<p>2、减少大量人工录入、纸质跑腿等重复工作，有效提升税务人员日常办公效率。</p>
-
-<p>3、统一规范涉税数据标准，提升后台数据监管能力，辅助异常行为风险预警。</p>
-
-<p>4、系统全程平稳运行，无线上重大问题，顺利通过官方验收，长期常态化投入正式使用。</p>
+  <p>覆盖全网纳税人外网办税门户、税务内网稽查审批后台，支撑税收征管、申报稽查、多级审批全业务闭环，系统至今官方线上稳定运行。</p>
+</div>
 
 <hr />
 
-<h3 id="-个人收获">💡 个人收获</h3>
+<div class="gov-section">
+  <h3 id="section-1">⚙️ 技术栈</h3>
 
-<p>刚毕业时（2018年6月）深度参与的大型电子政务级项目，可以说入门阶段就见识了高安全、高规范、高稳定性要求下的开发标准，潜移默化地使我以后对工作质量的高标准要求奠定了基础。</p>
+  <p><strong>后端</strong>：Java 8、Spring Boot</p>
 
-<p>但各种复杂的业务数据、核算逻辑、审批流程让我一度顾此失彼，疲于应付，好在经过百折不挠的努力，尽职尽责地胜任了所有工作，不仅学到了各种业务、技术知识，还真正的做到了让自己能够沉下心，去解决工作中各种棘手的问题。</p>
+  <p><strong>前端</strong>：Vue2 + Element UI、Angular、ECharts</p>
 
-<p>另外大型项目随之而来的大团队协同开发、跨团队合作、跨区域交流、信息同步、责任边界、任务推进，让我在个人软实力方面也得到了快速的提升，能够适应规范化的职场协作节奏，懂得高效同步对接、合理划分工作边界、及时上报协同攻坚，快速完成从新人到独立上手干活的职场过渡。</p>
+  <p><strong>数据库</strong>：Oracle</p>
 
-<p>不得不说这段初入职场的宝贵经历，彻底褪去了我学生时代的青涩与浮躁，也打磨出抗压攻坚、踏实肯干的职业素养，让我在后续各类工作挑战中始终保持严谨态度、从容应对，稳步实现个人专业能力与综合素养的持续成长。</p>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="电子政务" /><summary type="html"><![CDATA[访问地址]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://localhost:4000/moment/2020/10/02/testing-mathjax/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://localhost:4000/moment/2020/10/02/testing-mathjax</id><content type="html" xml:base="http://localhost:4000/moment/2020/10/02/testing-mathjax/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
+  <p><strong>中间件</strong>：Activiti、Nginx、RabbitMQ</p>
+</div>
+
+<hr />
+
+<div class="gov-section">
+  <h3 id="section-2">👨‍💻 我的核心职责</h3>
+
+  <p>全程深度参与业务开发与迭代，主要负责：</p>
+
+  <ul class="duty-list">
+<li class="duty-item">
+      <p><span class="duty-number">1</span>
+日常对接业务人员与产品同事，负责常规业务需求接收、梳理与落地开发，精准理解税务复杂业务流程，按规范拆解开发任务；独立负责开发纳税人资料管理、线上申报核算、税票查询、电子凭证下载归档等核心业务模块，代码规范、功能稳定，按期完成每一轮迭代开发工作。</p>
+    </li>
+<li class="duty-item">
+      <p><span class="duty-number">2</span>
+配合完成多方系统联调工作，负责编写后端标准业务接口、配合前端完成页面功能对接与适配优化；主动配合现场实施人员，完成真实业务数据对接、业务参数调试、环境适配以及上线前后测试校验，保障功能顺利投产上线、无线上问题。</p>
+    </li>
+<li class="duty-item">
+      <p><span class="duty-number">3</span>
+服从团队开发安排，配合组长完成日常开发任务执行，主动分担重点难点开发工作；日常做好代码自查优化，配合团队把控开发质量与进度；积极参与组内技术交流，复用公共组件与规范接口，稳步支撑项目多轮迭代，保障税务征管、稽查相关业务平稳运行。</p>
+    </li>
+</ul>
+</div>
+
+<hr />
+
+<div class="gov-section">
+  <h3 id="section-3">📈 项目成果 &amp; 业务价值</h3>
+
+  <ul class="achievement-list">
+<li class="achievement-item">
+<span class="check-icon">✓</span>
+<div>
+<strong style="color: #1e3a8a;">流程数字化升级</strong><br />
+将线下办税、稽查审批全部转为线上办理，统一操作入口，简化办事流程，业务流转更顺畅。
+</div>
+</li>
+<li class="achievement-item">
+<span class="check-icon">✓</span>
+<div>
+<strong style="color: #1e3a8a;">工作效率提升</strong><br />
+减少大量人工录入、纸质跑腿等重复工作，有效提升税务人员日常办公效率。
+</div>
+</li>
+<li class="achievement-item">
+<span class="check-icon">✓</span>
+<div>
+<strong style="color: #1e3a8a;">数据监管强化</strong><br />
+统一规范涉税数据标准，提升后台数据监管能力，辅助异常行为风险预警。
+</div>
+</li>
+<li class="achievement-item">
+<span class="check-icon">✓</span>
+<div>
+<strong style="color: #1e3a8a;">系统稳定运行</strong><br />
+系统全程平稳运行，无线上重大问题，顺利通过官方验收，长期常态化投入正式使用。
+</div>
+</li>
+</ul>
+</div>
+
+<hr />
+
+<div class="gov-section">
+  <h3 id="section-4">💡 个人收获</h3>
+
+  <p>刚毕业时（2018年6月）深度参与的大型电子政务级项目，可以说入门阶段就见识了高安全、高规范、高稳定性要求下的开发标准，潜移默化地使我以后对工作质量的高标准要求奠定了基础。</p>
+
+  <p>但各种复杂的业务数据、核算逻辑、审批流程让我一度顾此失彼，疲于应付，好在经过百折不挠的努力，尽职尽责地胜任了所有工作，不仅学到了各种业务、技术知识，还真正的做到了让自己能够沉下心，去解决工作中各种棘手的问题。</p>
+
+  <p>另外大型项目随之而来的大团队协同开发、跨团队合作、跨区域交流、信息同步、责任边界、任务推进，让我在个人软实力方面也得到了快速的提升，能够适应规范化的职场协作节奏，懂得高效同步对接、合理划分工作边界、及时上报协同攻坚，快速完成从新人到独立上手干活的职场过渡。</p>
+
+  <p>不得不说这段初入职场的宝贵经历，彻底褪去了我学生时代的青涩与浮躁，也打磨出抗压攻坚、踏实肯干的职业素养，让我在后续各类工作挑战中始终保持严谨态度、从容应对，稳步实现个人专业能力与综合素养的持续成长。</p>
+</div>
+
+<!-- 底部印章效果 -->
+<div class="gov-seal">
+  <div class="seal-stamp">已验收</div>
+</div>
+
+<!-- </div> -->
+
+<script>
+// 滚动渐入动画 - 封装为全局函数，供 PJAX 调用
+window.initGovScrollAnimation = function() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, observerOptions);
+  
+  // 为所有gov-section添加初始样式并观察
+  document.querySelectorAll('.gov-section, .info-card, .duty-item, .achievement-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+  
+  console.log('✅ Government style animations initialized');
+};
+
+// 检测是否为 PJAX 环境（通过检查 window._pjaxInitialized 标记）
+// 如果是首次加载（非 PJAX），则立即执行
+if (!window._pjaxInitialized) {
+  // 等待 DOM 完全加载后执行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(window.initGovScrollAnimation, 50);
+    });
+  } else {
+    // DOM 已经加载完成
+    setTimeout(window.initGovScrollAnimation, 50);
+  }
+}
+</script>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="电子政务" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://localhost:4000/moment/2020/10/02/testing-mathjax/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://localhost:4000/moment/2020/10/02/testing-mathjax</id><content type="html" xml:base="http://localhost:4000/moment/2020/10/02/testing-mathjax/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
 
 <p>An inline math: \(E=mc^2\).</p>
 
