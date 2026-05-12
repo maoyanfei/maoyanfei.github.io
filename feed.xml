@@ -1,4 +1,613 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-05-11T23:03:09+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">思佰益全球网上银行（SIGT）</title><link href="http://0.0.0.0:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E5%85%A8%E7%90%83%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C/" rel="alternate" type="text/html" title="思佰益全球网上银行（SIGT）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://0.0.0.0:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E5%85%A8%E7%90%83%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C</id><content type="html" xml:base="http://0.0.0.0:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E5%85%A8%E7%90%83%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C/"><![CDATA[<p><em>访问地址</em></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-05-12T22:46:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">思佰益海外汇款系统（SBI Remit）</title><link href="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="思佰益海外汇款系统（SBI Remit）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
+/* 赛博朋克风格样式 */
+/* .cyber-container {
+  position: relative;
+  overflow: hidden;
+} */
+
+/* 霓虹灯标题效果 */
+.neon-title {
+  color: #0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #00ffff,
+    0 0 80px #00ffff;
+  animation: neon-flicker 2s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #00ffff,
+      0 0 80px #00ffff;
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow: none;
+  }
+}
+
+/* 打字机光标 */
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #0ff;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* 状态栏样式 */
+.status-bar {
+  background: linear-gradient(90deg, rgba(0,255,255,0.1) 0%, rgba(0,0,0,0) 100%);
+  border-left: 4px solid #0ff;
+  padding: 15px 20px;
+  margin: 20px 0;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.status-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 255, 255, 0.05) 50%, transparent 100%);
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* 项目档案卡片 */
+.project-card {
+  background: rgba(0, 20, 40, 0.6);
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.6),
+    inset 0 0 30px rgba(0, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-card td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.project-card td:first-child {
+  color: #0ff;
+  font-weight: bold;
+  width: 30%;
+}
+
+/* 技术架构代码块 */
+.tech-stack {
+  background: #0a0a0a;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack::before {
+  content: '>';
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #0ff;
+  font-size: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.tech-stack code {
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+}
+
+/* 核心职责卡片 */
+.duty-item {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  border-left: 4px solid #0ff;
+  padding: 15px 20px;
+  margin: 15px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.duty-item:hover {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-left-width: 6px;
+  padding-left: 18px;
+}
+
+.duty-number {
+  display: inline-block;
+  background: #0ff;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* 成果清单 */
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0;
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.05);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: rgba(0, 255, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.check-icon {
+  color: #0f0;
+  font-size: 24px;
+  margin-right: 15px;
+  text-shadow: 0 0 10px #0f0;
+  flex-shrink: 0;
+}
+
+/* 底部展望 */
+.future-outlook {
+  background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  border: 2px solid #f0f;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.future-outlook::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, #f0f, transparent);
+  animation: rotate 4s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+
+.future-outlook blockquote {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+/* 传输完成标记 */
+.transmission-end {
+  text-align: center;
+  color: #0ff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 2px solid rgba(0, 255, 255, 0.3);
+  animation: fade-in-out 3s infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .neon-title {
+    font-size: 1.5em;
+  }
+
+  .project-card td {
+    display: block;
+    width: 100%;
+  }
+
+  .project-card td:first-child {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* 赛博朋克文本框 */
+.cyber-text-box {
+  background: rgba(0, 20, 40, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-left: 4px solid #0ff;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.2),
+    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cyber-text-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0ff, transparent);
+  animation: scan-line 3s linear infinite;
+}
+
+@keyframes scan-line {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.cyber-text-box:hover {
+  background: rgba(0, 20, 40, 0.6);
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.4),
+    inset 0 0 30px rgba(0, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.cyber-text-box p {
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin: 12px 0;
+  text-align: justify;
+}
+
+.cyber-text-box p:first-child {
+  margin-top: 0;
+}
+
+.cyber-text-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* 成长卡片样式 */
+.growth-card {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.08) 0%, rgba(0, 20, 40, 0.5) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 25px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.15),
+    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+
+.growth-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #0ff, transparent, #0ff, transparent);
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.growth-card:hover::before {
+  opacity: 0.3;
+  animation: rotate-border 3s linear infinite;
+}
+
+@keyframes rotate-border {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.growth-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 5px 25px rgba(0, 255, 255, 0.4),
+    inset 0 0 30px rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.6);
+}
+
+.growth-card h4 {
+  color: #0ff;
+  margin-top: 0;
+  text-shadow: 0 0 10px #0ff;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.growth-card p {
+  color: #d0d0d0;
+  line-height: 1.9;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.growth-card p:last-child {
+  margin-bottom: 0;
+}
+</style>
+
+<!-- <div class="cyber-container"> -->
+
+<!-- 状态栏 -->
+<div class="status-bar">
+  <strong style="color: #0ff; font-size: 1.2em;">⚡ SYSTEM ONLINE</strong>
+  <span id="typing-text" style="color: #fff; margin-left: 10px;"></span><span class="typing-cursor"></span>
+</div>
+
+<h2 class="neon-title" id="链接访问">链接访问</h2>
+
+<p>🔗 <strong>访问地址</strong>: <a href="https://www.remit.co.jp/" target="_blank" rel="noopener noreferrer" style="color: #0ff; text-decoration: none; border-bottom: 2px solid #0ff;">https://www.remit.co.jp/</a></p>
+
+<h2 class="neon-title" id="系统预览">系统预览</h2>
+
+<p><img src="/assets/images/SBIRemit.png" alt="SIGT" style="border: 2px solid #0ff; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);" /></p>
+
+<hr />
+
+<h2 class="neon-title" id="项目档案">项目档案</h2>
+
+<div class="project-card">
+<table>
+<tr>
+<td><strong>维度</strong></td>
+<td><strong>介绍</strong></td>
+</tr>
+<tr>
+<td><strong>项目名称</strong></td>
+<td>思佰益海外汇款系统（SBI Remit）</td>
+</tr>
+<tr>
+<td><strong>业务属性</strong></td>
+<td>网上银行 · 跨境汇款平台</td>
+</tr>
+<tr>
+<td><strong>协作模式</strong></td>
+<td>开发 · 产品 · 测试 · 运维 多角色协同</td>
+</tr>
+<tr>
+<td><strong>时间跨度</strong></td>
+<td>2019 - 2021</td>
+</tr>
+</table>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="项目背景">项目背景</h2>
+
+<div class="cyber-text-box">
+<p><strong style="color: #0ff;">思佰益海外汇款系统（SBI Remit）</strong>是日本SBI集团旗下核心跨境汇款平台，服务于全球个人及企业用户，重点覆盖在日华人、留学生、技能实习生及跨境企业群体。</p>
+
+<p>系统提供多渠道跨境汇款服务，包含网上在线、ATM终端、便利店收据等汇款方式，支持全球200+国家/地区的现金取款与银行卡直汇双模式收款，提供多语言（含中文）操作界面；对内支撑后台审核、额度管控、交易监控、数据统计等管理功能。</p>
+
+<p>覆盖用户端、后台管理端、第三方接口对接层，支撑跨境汇款全流程（注册、提交、审核、解付、到账）闭环，系统上线后稳定运行，成为SBI集团跨境金融服务的核心载体。</p>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="技术架构">技术架构</h2>
+
+<div class="tech-stack">
+  <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">后端框架</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Java </span><span class="m">8</span>
+  <span class="pi">-</span> <span class="s">Struts2</span>
+  <span class="pi">-</span> <span class="s">Spring Boot</span>
+
+<span class="na">前端技术</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">JSP</span>
+  <span class="pi">-</span> <span class="s">JQuery</span>
+  <span class="pi">-</span> <span class="s">Bootstrap</span>
+
+<span class="na">数据存储</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Oracle</span>
+
+<span class="na">中间件集群</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Nginx</span>
+  <span class="pi">-</span> <span class="s">RabbitMQ</span>
+  <span class="pi">-</span> <span class="s">Redis</span>
+</code></pre></div>  </div>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="核心职责">核心职责</h2>
+
+<div class="duty-item">
+  <p><span class="duty-number">1</span>
+<strong style="color: #0ff;">核心模块开发</strong><br />
+独立负责开发用户汇款提交、收款人信息管理、MoneyGram汇款接口对接、第三方银行汇款接口对接、定时任务管理等核心业务模块，按期完成每一轮迭代开发工作。</p>
+</div>
+
+<div class="duty-item">
+  <p><span class="duty-number">2</span>
+<strong style="color: #0ff;">多方联调与上线保障</strong><br />
+配合测试、运维、客服团队进行多方联调，完成真实业务数据对接、接口参数调试、环境适配以及上线前后测试校验，支持客服团队为用户解决系统线上问题。</p>
+</div>
+
+<div class="duty-item">
+  <p><span class="duty-number">3</span>
+<strong style="color: #0ff;">系统重构与优化</strong><br />
+负责第二代系统数据迁移、接口标准化重构工作，提升系统承载能力与扩展性。</p>
+</div>
+
+<blockquote>
+  <p>📸 <strong>实战截图</strong></p>
+
+  <p><strong>比如这个就是我经常要做、要改的功能之一😀哈哈！</strong></p>
+
+  <p><img src="/assets/images/SBIRemit2.png" alt="SIGT" style="border: 2px solid #0ff; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);" /></p>
+</blockquote>
+
+<hr />
+
+<h2 class="neon-title" id="成果与价值">成果与价值</h2>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">多渠道服务落地</strong><br />
+实现多渠道、多场景跨境汇款服务落地，统一用户操作入口，简化汇款流程，极速到账，大幅提升用户汇款体验。
+</div>
+</div>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">成本与效率优化</strong><br />
+优化跨境汇款手续费体系，降低用户汇款成本，同时通过技术优化减少人工审核工作量，提升后台运营效率。
+</div>
+</div>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">全球化覆盖</strong><br />
+完成与MoneyGram、多家银行及线下终端的接口对接，实现200+国家/地区的汇款覆盖，支撑多语言服务，扩大平台服务范围。
+</div>
+</div>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">稳定性保障</strong><br />
+系统全程平稳运行，无线上重大故障，长期常态化投入正式使用，成为跨境汇款领域的核心标杆平台
+</div>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="成长与收获">成长与收获</h2>
+
+<div class="growth-card">
+<h4 style="color: #0ff; margin-top: 0; text-shadow: 0 0 10px #0ff;">🎯 适应力突破</h4>
+<p>19年底到日本工作后的第一个项目，锻炼出了在完全陌生的工作氛围、节奏、技术等各方面的适应能力，也完成了世界那么大我想去看看的职业探索初衷，在异国他乡的实战中验证了自己的潜力和韧性。</p>
+</div>
+
+<div class="growth-card">
+<h4 style="color: #0ff; margin-top: 0; text-shadow: 0 0 10px #0ff;">⚙️ 工程思维建立</h4>
+<p>具体来讲，尽管项目中的工作节奏相对缓慢，但流程控制非常严格，从需求、变更的评审到研发、测试、上线各环节严格遵守，稳步推进，另一方面强调质量管理，除了代码审核、代码质量检查等，实行系统全方位测试，如单元测试、集成测试、系统测试、性能测试、冒烟测试、安全测试等，在项目文件方面，需求留底、变更记录、功能说明、测试用例编写等均能保持清晰、规范，达到文档化标准，使项目保持健壮、易维护、易扩展。</p>
+<p>自此自己的关注点得以丰富，从纯粹的技术视角拓展至业务流程闭环与用户体验维度。我意识到优秀的系统不仅在于代码的精妙，更在于需求理解的准确、文档记录的完整以及测试覆盖的全面，这种全方位的质量意识使我能够更从容地处理复杂业务逻辑，确保系统长期稳定运行。</p>
+</div>
+
+<hr />
+
+<div class="future-outlook">
+  <blockquote>
+<strong style="color: #f0f; font-size: 1.3em;">🚀 赛博启动</strong><br /><br />
+勇闯日本职场的生涯主线任务正式开启，带着这份从实战中磨砺出的严谨与从容，我将以更专业的姿态迎接未来的每一次挑战与机遇。
+</blockquote>
+</div>
+
+<div class="transmission-end">
+*// TRANSMISSION COMPLETE //*
+</div>
+
+<!-- </div> -->
+
+<script>
+// 打字机效果
+const text = "跨境汇款核心平台 | 赛博数据传输中...";
+const typingElement = document.getElementById('typing-text');
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    typingElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+// 页面加载完成后启动打字机效果
+window.addEventListener('load', function() {
+  setTimeout(typeWriter, 500);
+});
+
+// 添加鼠标移动时的粒子效果（可选）
+document.addEventListener('mousemove', function(e) {
+  if (Math.random() > 0.95) { // 降低频率
+    const particle = document.createElement('div');
+    particle.style.position = 'fixed';
+    particle.style.left = e.clientX + 'px';
+    particle.style.top = e.clientY + 'px';
+    particle.style.width = '4px';
+    particle.style.height = '4px';
+    particle.style.background = '#0ff';
+    particle.style.borderRadius = '50%';
+    particle.style.pointerEvents = 'none';
+    particle.style.boxShadow = '0 0 10px #0ff';
+    particle.style.zIndex = '9999';
+    document.body.appendChild(particle);
+
+    setTimeout(() => {
+      particle.remove();
+    }, 1000);
+  }
+});
+</script>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="网上银行" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">安哥拉国家税务稽查系统（SIGT）</title><link href="http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="安哥拉国家税务稽查系统（SIGT）" /><published>2026-05-06T15:11:00+08:00</published><updated>2026-05-06T15:11:00+08:00</updated><id>http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/"><![CDATA[<p><em>访问地址</em></p>
 
 <p><a href="https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada" target="_blank" rel="noopener noreferrer">https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada</a></p>
 
@@ -74,97 +683,21 @@
 
 <p>另外大型项目随之而来的大团队协同开发、跨团队合作、跨区域交流、信息同步、责任边界、任务推进，让我在个人软实力方面也得到了快速的提升，能够适应规范化的职场协作节奏，懂得高效同步对接、合理划分工作边界、及时上报协同攻坚，快速完成从新人到独立上手干活的职场过渡。</p>
 
-<p>不得不说这段初入职场的宝贵经历，彻底褪去了我学生时代的青涩与浮躁，也打磨出抗压攻坚、踏实肯干的职业素养，让我在后续各类工作挑战中始终保持严谨态度、从容应对，稳步实现个人专业能力与综合素养的持续成长。</p>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="网上银行" /><summary type="html"><![CDATA[访问地址]]></summary></entry><entry><title type="html">安哥拉国家税务稽查系统（SIGT）</title><link href="http://0.0.0.0:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="安哥拉国家税务稽查系统（SIGT）" /><published>2026-05-06T15:11:00+08:00</published><updated>2026-05-06T15:11:00+08:00</updated><id>http://0.0.0.0:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://0.0.0.0:4000/project/2026/05/06/%E5%AE%89%E5%93%A5%E6%8B%89%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E7%A8%BD%E6%9F%A5%E7%B3%BB%E7%BB%9F/"><![CDATA[<p><em>访问地址</em></p>
-
-<p><a href="https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada" target="_blank" rel="noopener noreferrer">https://portaldocontribuinte.minfin.gov.ao/liquidacao-de-receita-consignada</a></p>
-
-<p><strong>系统预览</strong></p>
-
-<p><img src="/assets/images/AngolaTaxInspection.png" alt="SIGT" /></p>
-
-<hr />
-
-<h3 id="-项目基础信息">💼 项目基础信息</h3>
-
-<p>项目名称：安哥拉国家税务稽查系统（SIGT）</p>
-
-<p>项目属性：电子政务核心业务系统</p>
-
-<p>协作团队：后端、前端、产品、测试、运维多角色协同</p>
-
-<p>项目周期：2018-2020</p>
-
-<hr />
-
-<h3 id="-项目背景">🧾 项目背景</h3>
-
-<p>安哥拉国家税务稽查系统属于安哥拉国家税务综合管理系统的核心服务模块，借鉴国家税务总局（北京）电子税务系统经验，服务于安哥拉国家税务总局（AGT）。</p>
-
-<p>系统对外面向企业/个人提供在线办理税务申报、算税、查询、生成税票等功能，对内面向税务人员稽查专用，包含纳税人数据管理、申报审批、税票管理等功能。</p>
-
-<p>覆盖全网纳税人外网办税门户、税务内网稽查审批后台，支撑税收征管、申报稽查、多级审批全业务闭环，系统至今官方线上稳定运行。</p>
-
-<hr />
-
-<h3 id="️-技术栈">⚙️ 技术栈</h3>
-
-<p>后端：Java 8、Spring Boot</p>
-
-<p>前端：Vue2 + Element UI、Angular、ECharts</p>
-
-<p>数据库：Oracle</p>
-
-<p>中间件：Activiti、Nginx、RabbitMQ</p>
-
-<hr />
-
-<h3 id="‍-我的核心职责">👨‍💻 我的核心职责</h3>
-
-<p>全程深度参与业务开发与迭代，主要负责：</p>
-
-<p>1、日常对接业务人员与产品同事，负责常规业务需求接收、梳理与落地开发，精准理解税务复杂业务流程，按规范拆解开发任务；独立负责开发纳税人资料管理、线上申报核算、税票查询、电子凭证下载归档等核心业务模块，代码规范、功能稳定，按期完成每一轮迭代开发工作。</p>
-
-<p>2、配合完成多方系统联调工作，负责编写后端标准业务接口、配合前端完成页面功能对接与适配优化；主动配合现场实施人员，完成真实业务数据对接、业务参数调试、环境适配以及上线前后测试校验，保障功能顺利投产上线、无线上问题。</p>
-
-<p>3、服从团队开发安排，配合组长完成日常开发任务执行，主动分担重点难点开发工作；日常做好代码自查优化，配合团队把控开发质量与进度；积极参与组内技术交流，复用公共组件与规范接口，稳步支撑项目多轮迭代，保障税务征管、稽查相关业务平稳运行。</p>
-
-<hr />
-
-<h3 id="-项目成果--业务价值">📈 项目成果 &amp; 业务价值</h3>
-
-<p>1、将线下办税、稽查审批全部转为线上办理，统一操作入口，简化办事流程，业务流转更顺畅。</p>
-
-<p>2、减少大量人工录入、纸质跑腿等重复工作，有效提升税务人员日常办公效率。</p>
-
-<p>3、统一规范涉税数据标准，提升后台数据监管能力，辅助异常行为风险预警。</p>
-
-<p>4、系统全程平稳运行，无线上重大问题，顺利通过官方验收，长期常态化投入正式使用。</p>
-
-<hr />
-
-<h3 id="-个人收获">💡 个人收获</h3>
-
-<p>刚毕业时（2018年6月）深度参与的大型电子政务级项目，可以说入门阶段就见识了高安全、高规范、高稳定性要求下的开发标准，潜移默化地使我以后对工作质量的高标准要求奠定了基础。</p>
-
-<p>但各种复杂的业务数据、核算逻辑、审批流程让我一度顾此失彼，疲于应付，好在经过百折不挠的努力，尽职尽责地胜任了所有工作，不仅学到了各种业务、技术知识，还真正的做到了让自己能够沉下心，去解决工作中各种棘手的问题。</p>
-
-<p>另外大型项目随之而来的大团队协同开发、跨团队合作、跨区域交流、信息同步、责任边界、任务推进，让我在个人软实力方面也得到了快速的提升，能够适应规范化的职场协作节奏，懂得高效同步对接、合理划分工作边界、及时上报协同攻坚，快速完成从新人到独立上手干活的职场过渡。</p>
-
-<p>不得不说这段初入职场的宝贵经历，彻底褪去了我学生时代的青涩与浮躁，也打磨出抗压攻坚、踏实肯干的职业素养，让我在后续各类工作挑战中始终保持严谨态度、从容应对，稳步实现个人专业能力与综合素养的持续成长。</p>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="电子政务" /><summary type="html"><![CDATA[访问地址]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://0.0.0.0:4000/moment/2020/10/02/testing-mathjax/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://0.0.0.0:4000/moment/2020/10/02/testing-mathjax</id><content type="html" xml:base="http://0.0.0.0:4000/moment/2020/10/02/testing-mathjax/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
+<p>不得不说这段初入职场的宝贵经历，彻底褪去了我学生时代的青涩与浮躁，也打磨出抗压攻坚、踏实肯干的职业素养，让我在后续各类工作挑战中始终保持严谨态度、从容应对，稳步实现个人专业能力与综合素养的持续成长。</p>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="电子政务" /><summary type="html"><![CDATA[访问地址]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://localhost:4000/moment/2020/10/02/testing-mathjax/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://localhost:4000/moment/2020/10/02/testing-mathjax</id><content type="html" xml:base="http://localhost:4000/moment/2020/10/02/testing-mathjax/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
 
 <p>An inline math: \(E=mc^2\).</p>
 
 <p>A display math:</p>
 
 \[i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
-\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="moment" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://0.0.0.0:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
+\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="moment" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Testing MathJax</title><link href="http://localhost:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Testing MathJax" /><published>2020-10-02T15:32:00+08:00</published><updated>2020-10-02T15:32:00+08:00</updated><id>http://localhost:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/note/2020/10/02/%E7%AC%94%E8%AE%B0/"><![CDATA[<p>Not Pure Poole supports <a href="https://www.mathjax.org/">MathJax</a>. You can enable it on a page by setting <code class="language-plaintext highlighter-rouge">math: true</code> in the front matter.</p>
 
 <p>An inline math: \(E=mc^2\).</p>
 
 <p>A display math:</p>
 
 \[i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
-\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="note" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Welcome to Not Pure Poole</title><link href="http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole/" rel="alternate" type="text/html" title="Welcome to Not Pure Poole" /><published>2020-09-29T23:18:00+08:00</published><updated>2020-10-01T01:08:25+08:00</updated><id>http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole</id><content type="html" xml:base="http://0.0.0.0:4000/work/2020/09/29/welcome-to-not-pure-poole/"><![CDATA[<p class="message">Welcome to <strong>Not Pure Poole</strong>! This is an example post to show the layout.</p>
+\frac{\partial^2 \Psi}{\partial x^2} + V \Psi\]]]></content><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><category term="note" /><category term="mathjax" /><summary type="html"><![CDATA[Not Pure Poole supports MathJax. You can enable it on a page by setting math: true in the front matter.]]></summary></entry><entry><title type="html">Welcome to Not Pure Poole</title><link href="http://localhost:4000/work/2020/09/29/welcome-to-not-pure-poole/" rel="alternate" type="text/html" title="Welcome to Not Pure Poole" /><published>2020-09-29T23:18:00+08:00</published><updated>2020-10-01T01:08:25+08:00</updated><id>http://localhost:4000/work/2020/09/29/welcome-to-not-pure-poole</id><content type="html" xml:base="http://localhost:4000/work/2020/09/29/welcome-to-not-pure-poole/"><![CDATA[<p class="message">Welcome to <strong>Not Pure Poole</strong>! This is an example post to show the layout.</p>
 
 <p>First, do you notice the TOC on the right side? Try to scroll down to read this post, you’ll find that the TOC is always sticky in the viewport.</p>
 

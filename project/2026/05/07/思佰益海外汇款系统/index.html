@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="zh-CN">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>思佰益海外汇款系统（SBI Remit） | 毛艳飞</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="思佰益海外汇款系统（SBI Remit）" />
+<meta name="author" content="毛艳飞" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="description" content="不知名计算机领域从业人员 未认证高级软件工程师 PMP项目管理专业资格人士却还在一线搬砖的新生代农民工" />
+<meta property="og:description" content="不知名计算机领域从业人员 未认证高级软件工程师 PMP项目管理专业资格人士却还在一线搬砖的新生代农民工" />
+<link rel="canonical" href="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" />
+<meta property="og:url" content="http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" />
+<meta property="og:site_name" content="毛艳飞" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-07T16:11:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="思佰益海外汇款系统（SBI Remit）" />
+<meta name="twitter:site" content="@maoyanfei" />
+<meta name="twitter:creator" content="@毛艳飞" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"毛艳飞"},"dateModified":"2026-05-07T16:11:00+08:00","datePublished":"2026-05-07T16:11:00+08:00","description":"不知名计算机领域从业人员 未认证高级软件工程师 PMP项目管理专业资格人士却还在一线搬砖的新生代农民工","headline":"思佰益海外汇款系统（SBI Remit）","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"},"name":"毛艳飞"},"url":"http://localhost:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="毛艳飞" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- PJAX for seamless page transitions (keeps music playing) -->
+  <script src="/assets/js/pjax.js" defer></script>
+  
+  <!-- Avatar Preview Script -->
+  <script src="/assets/js/avatar-preview.js" defer></script>
+</head>
+
+
+  <body>
+
+    <!-- Snow Effect Container -->
+    <div id="snow-container"></div>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/bg.jpeg);"><header class="masthead">
+  <div class="avatar"><!-- Background Music -->
+      <audio id="background-music" loop preload="auto" playsinline webkit-playsinline>
+        <source src="/assets/mp3/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <div class="avatar-container" id="avatar-container">
+        <img src="/avatar.jpeg" class="avatar-image" alt="Mao Yanfei" id="avatar-preview-trigger" style="cursor: pointer;">
+        <div class="avatar-play-button" id="avatar-play-button">
+          <span class="play-icon">▶</span>
+          <span class="pause-icon" style="display: none;">❚❚</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Avatar Preview Modal -->
+    <div id="avatar-modal" class="avatar-modal" style="display: none;">
+      <div class="avatar-modal-content">
+        <span class="avatar-modal-close">&times;</span>
+        <img src="/avatar.jpeg" class="avatar-modal-image" alt="Mao Yanfei">
+      </div>
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">毛艳飞</a>
+  </div>
+  <div class="masthead-tagline">
+    <small>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="/assets/images/wechat-qr.jpg" data-qr-code="true">
+            <i class="fab fa-weixin" title="Wechat"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="/assets/images/qq-qr.jpg" data-qr-code="true">
+            <i class="fab fa-qq" title="QQ"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:415850136@qq.com" >
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="https://github.com/maoyanfei" >
+            <i class="fab fa-github" title="GitHub"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+
+<!-- QR Code Modal -->
+<div id="qr-modal" class="qr-modal" style="display: none;">
+  <div class="qr-modal-content">
+    <span class="qr-modal-close">&times;</span>
+    <img src="" class="qr-modal-image" alt="QR Code">
+    <p class="qr-modal-title"></p>
+  </div>
+</div>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <article class="post"><div class="back-link" style="margin-bottom: 1rem;"><a href="/tags/" class="btn btn-sm"><i class="fas fa-arrow-left"></i> 返回项目</a></div><h1 class="post-title">思佰益海外汇款系统（SBI Remit）</h1>
+  <div class="post-meta"><time datetime="2026-05-07T16:11:00+08:00" itemprop="datePublished">7 May 2026</time><span> • </span>
+      
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          毛艳飞
+        </span></div>
+
+  <style>
+/* 赛博朋克风格样式 */
+/* .cyber-container {
+  position: relative;
+  overflow: hidden;
+} */
+
+/* 霓虹灯标题效果 */
+.neon-title {
+  color: #0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #00ffff,
+    0 0 80px #00ffff;
+  animation: neon-flicker 2s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #00ffff,
+      0 0 80px #00ffff;
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow: none;
+  }
+}
+
+/* 打字机光标 */
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #0ff;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* 状态栏样式 */
+.status-bar {
+  background: linear-gradient(90deg, rgba(0,255,255,0.1) 0%, rgba(0,0,0,0) 100%);
+  border-left: 4px solid #0ff;
+  padding: 15px 20px;
+  margin: 20px 0;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.status-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 255, 255, 0.05) 50%, transparent 100%);
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* 项目档案卡片 */
+.project-card {
+  background: rgba(0, 20, 40, 0.6);
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.6),
+    inset 0 0 30px rgba(0, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-card td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.project-card td:first-child {
+  color: #0ff;
+  font-weight: bold;
+  width: 30%;
+}
+
+/* 技术架构代码块 */
+.tech-stack {
+  background: #0a0a0a;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack::before {
+  content: '>';
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #0ff;
+  font-size: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.tech-stack code {
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+}
+
+/* 核心职责卡片 */
+.duty-item {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  border-left: 4px solid #0ff;
+  padding: 15px 20px;
+  margin: 15px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.duty-item:hover {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-left-width: 6px;
+  padding-left: 18px;
+}
+
+.duty-number {
+  display: inline-block;
+  background: #0ff;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* 成果清单 */
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0;
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.05);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: rgba(0, 255, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.check-icon {
+  color: #0f0;
+  font-size: 24px;
+  margin-right: 15px;
+  text-shadow: 0 0 10px #0f0;
+  flex-shrink: 0;
+}
+
+/* 底部展望 */
+.future-outlook {
+  background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  border: 2px solid #f0f;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.future-outlook::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, #f0f, transparent);
+  animation: rotate 4s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+
+.future-outlook blockquote {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+/* 传输完成标记 */
+.transmission-end {
+  text-align: center;
+  color: #0ff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 2px solid rgba(0, 255, 255, 0.3);
+  animation: fade-in-out 3s infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .neon-title {
+    font-size: 1.5em;
+  }
+
+  .project-card td {
+    display: block;
+    width: 100%;
+  }
+
+  .project-card td:first-child {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* 赛博朋克文本框 */
+.cyber-text-box {
+  background: rgba(0, 20, 40, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-left: 4px solid #0ff;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.2),
+    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cyber-text-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0ff, transparent);
+  animation: scan-line 3s linear infinite;
+}
+
+@keyframes scan-line {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.cyber-text-box:hover {
+  background: rgba(0, 20, 40, 0.6);
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.4),
+    inset 0 0 30px rgba(0, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.cyber-text-box p {
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin: 12px 0;
+  text-align: justify;
+}
+
+.cyber-text-box p:first-child {
+  margin-top: 0;
+}
+
+.cyber-text-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* 成长卡片样式 */
+.growth-card {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.08) 0%, rgba(0, 20, 40, 0.5) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 25px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.15),
+    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+
+.growth-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #0ff, transparent, #0ff, transparent);
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.growth-card:hover::before {
+  opacity: 0.3;
+  animation: rotate-border 3s linear infinite;
+}
+
+@keyframes rotate-border {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.growth-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 5px 25px rgba(0, 255, 255, 0.4),
+    inset 0 0 30px rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.6);
+}
+
+.growth-card h4 {
+  color: #0ff;
+  margin-top: 0;
+  text-shadow: 0 0 10px #0ff;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.growth-card p {
+  color: #d0d0d0;
+  line-height: 1.9;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.growth-card p:last-child {
+  margin-bottom: 0;
+}
+</style>
+
+<!-- <div class="cyber-container"> -->
+
+<!-- 状态栏 -->
+<div class="status-bar">
+  <strong style="color: #0ff; font-size: 1.2em;">⚡ SYSTEM ONLINE</strong>
+  <span id="typing-text" style="color: #fff; margin-left: 10px;"></span><span class="typing-cursor"></span>
+</div>
+
+<h2 class="neon-title" id="链接访问">链接访问</h2>
+
+<p>🔗 <strong>访问地址</strong>: <a href="https://www.remit.co.jp/" target="_blank" rel="noopener noreferrer" style="color: #0ff; text-decoration: none; border-bottom: 2px solid #0ff;">https://www.remit.co.jp/</a></p>
+
+<h2 class="neon-title" id="系统预览">系统预览</h2>
+
+<p><img src="/assets/images/SBIRemit.png" alt="SIGT" style="border: 2px solid #0ff; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);" /></p>
+
+<hr />
+
+<h2 class="neon-title" id="项目档案">项目档案</h2>
+
+<div class="project-card">
+<table>
+<tr>
+<td><strong>维度</strong></td>
+<td><strong>介绍</strong></td>
+</tr>
+<tr>
+<td><strong>项目名称</strong></td>
+<td>思佰益海外汇款系统（SBI Remit）</td>
+</tr>
+<tr>
+<td><strong>业务属性</strong></td>
+<td>网上银行 · 跨境汇款平台</td>
+</tr>
+<tr>
+<td><strong>协作模式</strong></td>
+<td>开发 · 产品 · 测试 · 运维 多角色协同</td>
+</tr>
+<tr>
+<td><strong>时间跨度</strong></td>
+<td>2019 - 2021</td>
+</tr>
+</table>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="项目背景">项目背景</h2>
+
+<div class="cyber-text-box">
+<p><strong style="color: #0ff;">思佰益海外汇款系统（SBI Remit）</strong>是日本SBI集团旗下核心跨境汇款平台，服务于全球个人及企业用户，重点覆盖在日华人、留学生、技能实习生及跨境企业群体。</p>
+
+<p>系统提供多渠道跨境汇款服务，包含网上在线、ATM终端、便利店收据等汇款方式，支持全球200+国家/地区的现金取款与银行卡直汇双模式收款，提供多语言（含中文）操作界面；对内支撑后台审核、额度管控、交易监控、数据统计等管理功能。</p>
+
+<p>覆盖用户端、后台管理端、第三方接口对接层，支撑跨境汇款全流程（注册、提交、审核、解付、到账）闭环，系统上线后稳定运行，成为SBI集团跨境金融服务的核心载体。</p>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="技术架构">技术架构</h2>
+
+<div class="tech-stack">
+  <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">后端框架</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Java </span><span class="m">8</span>
+  <span class="pi">-</span> <span class="s">Struts2</span>
+  <span class="pi">-</span> <span class="s">Spring Boot</span>
+
+<span class="na">前端技术</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">JSP</span>
+  <span class="pi">-</span> <span class="s">JQuery</span>
+  <span class="pi">-</span> <span class="s">Bootstrap</span>
+
+<span class="na">数据存储</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Oracle</span>
+
+<span class="na">中间件集群</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Nginx</span>
+  <span class="pi">-</span> <span class="s">RabbitMQ</span>
+  <span class="pi">-</span> <span class="s">Redis</span>
+</code></pre></div>  </div>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="核心职责">核心职责</h2>
+
+<div class="duty-item">
+  <p><span class="duty-number">1</span>
+<strong style="color: #0ff;">核心模块开发</strong><br />
+独立负责开发用户汇款提交、收款人信息管理、MoneyGram汇款接口对接、第三方银行汇款接口对接、定时任务管理等核心业务模块，按期完成每一轮迭代开发工作。</p>
+</div>
+
+<div class="duty-item">
+  <p><span class="duty-number">2</span>
+<strong style="color: #0ff;">多方联调与上线保障</strong><br />
+配合测试、运维、客服团队进行多方联调，完成真实业务数据对接、接口参数调试、环境适配以及上线前后测试校验，支持客服团队为用户解决系统线上问题。</p>
+</div>
+
+<div class="duty-item">
+  <p><span class="duty-number">3</span>
+<strong style="color: #0ff;">系统重构与优化</strong><br />
+负责第二代系统数据迁移、接口标准化重构工作，提升系统承载能力与扩展性。</p>
+</div>
+
+<blockquote>
+  <p>📸 <strong>实战截图</strong></p>
+
+  <p><strong>比如这个就是我经常要做、要改的功能之一😀哈哈！</strong></p>
+
+  <p><img src="/assets/images/SBIRemit2.png" alt="SIGT" style="border: 2px solid #0ff; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);" /></p>
+</blockquote>
+
+<hr />
+
+<h2 class="neon-title" id="成果与价值">成果与价值</h2>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">多渠道服务落地</strong><br />
+实现多渠道、多场景跨境汇款服务落地，统一用户操作入口，简化汇款流程，极速到账，大幅提升用户汇款体验。
+</div>
+</div>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">成本与效率优化</strong><br />
+优化跨境汇款手续费体系，降低用户汇款成本，同时通过技术优化减少人工审核工作量，提升后台运营效率。
+</div>
+</div>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">全球化覆盖</strong><br />
+完成与MoneyGram、多家银行及线下终端的接口对接，实现200+国家/地区的汇款覆盖，支撑多语言服务，扩大平台服务范围。
+</div>
+</div>
+
+<div class="achievement-item">
+  <p><span class="check-icon">✅</span></p>
+  <div>
+<strong style="color: #0f0;">稳定性保障</strong><br />
+系统全程平稳运行，无线上重大故障，长期常态化投入正式使用，成为跨境汇款领域的核心标杆平台
+</div>
+</div>
+
+<hr />
+
+<h2 class="neon-title" id="成长与收获">成长与收获</h2>
+
+<div class="growth-card">
+<h4 style="color: #0ff; margin-top: 0; text-shadow: 0 0 10px #0ff;">🎯 适应力突破</h4>
+<p>19年底到日本工作后的第一个项目，锻炼出了在完全陌生的工作氛围、节奏、技术等各方面的适应能力，也完成了世界那么大我想去看看的职业探索初衷，在异国他乡的实战中验证了自己的潜力和韧性。</p>
+</div>
+
+<div class="growth-card">
+<h4 style="color: #0ff; margin-top: 0; text-shadow: 0 0 10px #0ff;">⚙️ 工程思维建立</h4>
+<p>具体来讲，尽管项目中的工作节奏相对缓慢，但流程控制非常严格，从需求、变更的评审到研发、测试、上线各环节严格遵守，稳步推进，另一方面强调质量管理，除了代码审核、代码质量检查等，实行系统全方位测试，如单元测试、集成测试、系统测试、性能测试、冒烟测试、安全测试等，在项目文件方面，需求留底、变更记录、功能说明、测试用例编写等均能保持清晰、规范，达到文档化标准，使项目保持健壮、易维护、易扩展。</p>
+<p>自此自己的关注点得以丰富，从纯粹的技术视角拓展至业务流程闭环与用户体验维度。我意识到优秀的系统不仅在于代码的精妙，更在于需求理解的准确、文档记录的完整以及测试覆盖的全面，这种全方位的质量意识使我能够更从容地处理复杂业务逻辑，确保系统长期稳定运行。</p>
+</div>
+
+<hr />
+
+<div class="future-outlook">
+  <blockquote>
+<strong style="color: #f0f; font-size: 1.3em;">🚀 赛博启动</strong><br /><br />
+勇闯日本职场的生涯主线任务正式开启，带着这份从实战中磨砺出的严谨与从容，我将以更专业的姿态迎接未来的每一次挑战与机遇。
+</blockquote>
+</div>
+
+<div class="transmission-end">
+*// TRANSMISSION COMPLETE //*
+</div>
+
+<!-- </div> -->
+
+<script>
+// 打字机效果
+const text = "跨境汇款核心平台 | 赛博数据传输中...";
+const typingElement = document.getElementById('typing-text');
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    typingElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+// 页面加载完成后启动打字机效果
+window.addEventListener('load', function() {
+  setTimeout(typeWriter, 500);
+});
+
+// 添加鼠标移动时的粒子效果（可选）
+document.addEventListener('mousemove', function(e) {
+  if (Math.random() > 0.95) { // 降低频率
+    const particle = document.createElement('div');
+    particle.style.position = 'fixed';
+    particle.style.left = e.clientX + 'px';
+    particle.style.top = e.clientY + 'px';
+    particle.style.width = '4px';
+    particle.style.height = '4px';
+    particle.style.background = '#0ff';
+    particle.style.borderRadius = '50%';
+    particle.style.pointerEvents = 'none';
+    particle.style.boxShadow = '0 0 10px #0ff';
+    particle.style.zIndex = '9999';
+    document.body.appendChild(particle);
+
+    setTimeout(() => {
+      particle.remove();
+    }, 1000);
+  }
+});
+</script>
+
+
+
+  
+    
+      <div class="post-tags-section">
+  <i class="post-tags-icon fas fa-tags"></i>
+  <ul class="post-tags"><li>
+        <a class="post-tag" href="/tags/#网上银行">网上银行</a></li></ul>
+</div>
+
+  
+
+  
+</article>
+
+
+<aside class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      
+      
+      <li>
+        <a href="/work/2020/09/29/welcome-to-not-pure-poole/">
+          Welcome to Not Pure Poole
+          <small><time datetime="2020-09-29T23:18:00+08:00">29 Sep 2020</time></small>
+        </a>
+      </li>
+      
+    
+  </ul>
+</aside>
+
+
+</main>
+
+<footer class="footer"><small>
+    &copy; 2020&nbsp;-&nbsp;2026 <a href="https://maoyanfei.github.io/">Mao Yanfei</a>. All rights reserved.
+    Powered by <a href="https://jekyllcn.com">Jekyll</a> & <a href="https://github.com/maoyanfei/maoyanfei.github.io">MYF</a>.
+  </small>
+</footer>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'auto'  // 改为 auto，避免闪烁
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+<script src="/assets/js/avatar-preview.js"></script>
+    <script src="/assets/js/qr-code-modal.js"></script>
+    <script src="/assets/js/snow.js"></script></body>
+</html>
