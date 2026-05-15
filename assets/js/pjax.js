@@ -321,6 +321,9 @@
       // Re-run any initialization code needed for new content
       // For example, MathJax, syntax highlighting, etc.
       
+      // Execute inline scripts from the new page content
+      this.executeInlineScripts();
+      
       // Re-initialize avatar preview and music controls
       if (typeof initializeAvatarAndMusic === 'function') {
         initializeAvatarAndMusic();
@@ -334,6 +337,57 @@
       // Re-initialize any other dynamic features
       this.initializeCopyButtons();
       // Note: Hint icons use event delegation, no need to re-initialize
+    },
+    
+    // Execute inline scripts from new page content
+    executeInlineScripts: function() {
+      const content = document.querySelector('.content');
+      if (!content) return;
+      
+      const scripts = content.querySelectorAll('script');
+      let executedCount = 0;
+      let skippedCount = 0;
+      
+      scripts.forEach(script => {
+        // Skip external scripts (with src attribute)
+        if (script.src) {
+          skippedCount++;
+          return;
+        }
+        
+        const scriptContent = script.textContent.trim();
+        
+        // Skip empty scripts
+        if (!scriptContent || scriptContent.length === 0) {
+          skippedCount++;
+          return;
+        }
+        
+        // Skip JSON or configuration data
+        if (/^\s*[\[{]/.test(scriptContent) || /^\s*"[^"]+"\s*:/.test(scriptContent)) {
+          skippedCount++;
+          return;
+        }
+        
+        // Skip HTML comments
+        if (/^\s*<!--/.test(scriptContent)) {
+          skippedCount++;
+          return;
+        }
+        
+        // Execute the script using Function constructor
+        try {
+          console.log('▶️ Executing inline script...');
+          const func = new Function(scriptContent);
+          func.call(window);
+          executedCount++;
+          console.log('✅ Inline script executed successfully');
+        } catch (error) {
+          console.error('❌ Script execution failed:', error);
+        }
+      });
+      
+      console.log(`📊 Scripts: ${executedCount} executed, ${skippedCount} skipped, ${scripts.length} found`);
     },
     
     // Re-initialize copy buttons
