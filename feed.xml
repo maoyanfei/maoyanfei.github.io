@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://192.168.1.3:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.1.3:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-05-15T23:17:11+08:00</updated><id>http://192.168.1.3:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">思佰益海外汇款系统（SBI Remit）</title><link href="http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="思佰益海外汇款系统（SBI Remit）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://192.168.1.3:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.1.3:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-05-22T22:27:40+08:00</updated><id>http://192.168.1.3:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">思佰益海外汇款系统（SBI Remit）</title><link href="http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="思佰益海外汇款系统（SBI Remit）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
 /* 赛博朋克风格样式 */
 /* .cyber-container {
   position: relative;
@@ -519,25 +519,25 @@ html, body {
 <div class="duty-item">
   <p><span class="duty-number">1</span>
 <strong style="color: #0ff;">核心模块开发</strong><br />
-独立负责开发用户汇款提交、收款人信息管理、MoneyGram汇款接口对接、第三方银行汇款接口对接、定时任务管理等核心业务模块，按期完成每一轮迭代开发工作。</p>
+独立负责开发核心功能模块，如转账数据录入、汇款接口对接、定时批量处理汇款订单等，按期完成每一轮迭代开发工作。</p>
 </div>
 
 <div class="duty-item">
   <p><span class="duty-number">2</span>
 <strong style="color: #0ff;">多方联调与上线保障</strong><br />
-配合测试、运维、客服团队进行多方联调，完成真实业务数据对接、接口参数调试、环境适配以及上线前后测试校验，支持客服团队为用户解决系统线上问题。</p>
+担任团队协同的关键连接点，高效打通开发、测试、运维间的信息壁垒，如负责进行功能说明，协助测试团队完成测试用例的编写、问题复现与修复；负责技术支持，协助运维团队进行环境搭建与上线调试；协助客服团队排查、说明或解决用户遇到的问题。</p>
 </div>
 
 <div class="duty-item">
   <p><span class="duty-number">3</span>
 <strong style="color: #0ff;">系统重构与优化</strong><br />
-负责第二代系统数据迁移、接口标准化重构工作，提升系统承载能力与扩展性。</p>
+负责系统结构化改造工作，比如历史数据迁移、接口标准化重构等，提升系统承载能力与扩展性。</p>
 </div>
 
 <blockquote>
   <p>📸 <strong>实战截图</strong></p>
 
-  <p><strong>比如这个就是我经常要做、要改的功能之一😀哈哈！</strong></p>
+  <p><strong>像这样的汇款功能就是本人的开发工作之一😀！</strong></p>
 
   <p><img src="/assets/images/SBIRemit2.png" alt="SIGT" style="border: 2px solid #0ff; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);" /></p>
 </blockquote>
@@ -566,7 +566,7 @@ html, body {
   <p><span class="check-icon">✅</span></p>
   <div>
 <strong style="color: #0f0;">全球化覆盖</strong><br />
-完成与MoneyGram、多家银行及线下终端的接口对接，实现200+国家/地区的汇款覆盖，支撑多语言服务，扩大平台服务范围。
+完成与MoneyGram、中国银联等多家银行及第三方汇款接口的对接，实现200+国家/地区的汇款覆盖，支撑多语言服务，扩大平台服务范围。
 </div>
 </div>
 
@@ -574,7 +574,7 @@ html, body {
   <p><span class="check-icon">✅</span></p>
   <div>
 <strong style="color: #0f0;">稳定性保障</strong><br />
-系统全程平稳运行，无线上重大故障，长期常态化投入正式使用，成为跨境汇款领域的核心标杆平台
+系统全程平稳运行，无线上重大故障，长期常态化投入正式使用，成为跨境汇款领域的核心标杆平台。
 </div>
 </div>
 
@@ -990,15 +990,15 @@ window.initTypewriterEffect = function() {
   <ul class="duty-list">
 <li class="duty-item">
       <p><span class="duty-number">1</span>
-日常对接业务人员与产品同事，负责常规业务需求接收、梳理与落地开发，精准理解税务复杂业务流程，按规范拆解开发任务；独立负责开发纳税人资料管理、线上申报核算、税票查询、电子凭证下载归档等核心业务模块，代码规范、功能稳定，按期完成每一轮迭代开发工作。</p>
+负责系统功能模块开发，如纳税人资料管理、各税种申报核算、税票查询、电子凭证下载归档等，代码规范、功能稳定，按期完成每一轮迭代开发工作。</p>
     </li>
 <li class="duty-item">
       <p><span class="duty-number">2</span>
-配合完成多方系统联调工作，负责编写后端标准业务接口、配合前端完成页面功能对接与适配优化；主动配合现场实施人员，完成真实业务数据对接、业务参数调试、环境适配以及上线前后测试校验，保障功能顺利投产上线、无线上问题。</p>
+配合团队的日常沟通联调工作，如与产品经理交流设计改动、配合测试团队联调测试与bug修复、沟通现场实施人员，完成真实业务数据对接、上线前后测试校验等，保障功能顺利投产上线、无线上问题。</p>
     </li>
 <li class="duty-item">
       <p><span class="duty-number">3</span>
-服从团队开发安排，配合组长完成日常开发任务执行，主动分担重点难点开发工作；日常做好代码自查优化，配合团队把控开发质量与进度；积极参与组内技术交流，复用公共组件与规范接口，稳步支撑项目多轮迭代，保障税务征管、稽查相关业务平稳运行。</p>
+服从组织安排，积极参与技术交流、工作会议，配合团队把控开发进度与质量；主动分担重点难点开发工作，参与分解部分开发任务并带领其他小组成员完成工作内容。</p>
     </li>
 </ul>
 </div>
@@ -1043,7 +1043,7 @@ window.initTypewriterEffect = function() {
 <hr />
 
 <div class="gov-section">
-  <h3 id="section-4">💡 个人收获</h3>
+  <h3 id="section-4">🌱 个人收获</h3>
 
   <p>刚毕业时（2018年6月）深度参与的大型电子政务级项目，可以说入门阶段就见识了高安全、高规范、高稳定性要求下的开发标准，潜移默化地使我以后对工作质量的高标准要求奠定了基础。</p>
 
