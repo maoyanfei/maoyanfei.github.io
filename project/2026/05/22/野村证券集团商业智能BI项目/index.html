@@ -1,0 +1,1313 @@
+<!doctype html>
+<html lang="zh-CN">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/pure-min.css">
+  <link rel="stylesheet" href="/assets/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>野村证券集团商业智能项目（Nomura BI） | 毛艳飞</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="野村证券集团商业智能项目（Nomura BI）" />
+<meta name="author" content="毛艳飞" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="description" content="不知名计算机领域从业人员 未认证高级软件工程师 PMP项目管理专业资格人士却还在一线搬砖的新生代农民工" />
+<meta property="og:description" content="不知名计算机领域从业人员 未认证高级软件工程师 PMP项目管理专业资格人士却还在一线搬砖的新生代农民工" />
+<link rel="canonical" href="http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/" />
+<meta property="og:url" content="http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/" />
+<meta property="og:site_name" content="毛艳飞" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-22T22:34:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="野村证券集团商业智能项目（Nomura BI）" />
+<meta name="twitter:site" content="@maoyanfei" />
+<meta name="twitter:creator" content="@毛艳飞" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"毛艳飞"},"dateModified":"2026-05-22T22:34:00+08:00","datePublished":"2026-05-22T22:34:00+08:00","description":"不知名计算机领域从业人员 未认证高级软件工程师 PMP项目管理专业资格人士却还在一线搬砖的新生代农民工","headline":"野村证券集团商业智能项目（Nomura BI）","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://192.168.1.3:4000/logo.png"},"name":"毛艳飞"},"url":"http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://192.168.1.3:4000/feed.xml" title="毛艳飞" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- PJAX for seamless page transitions (keeps music playing) -->
+  <script src="/assets/js/pjax.js"></script>
+  
+  <!-- Avatar Preview Script -->
+  <script src="/assets/js/avatar-preview.js" defer></script>
+</head>
+
+  <body>
+
+    <!-- Snow Effect Container -->
+    <div id="snow-container"></div>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/bg.jpeg);"><header class="masthead">
+  <div class="avatar"><!-- Background Music -->
+      <audio id="background-music" loop preload="auto" playsinline webkit-playsinline>
+        <source src="/assets/mp3/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <div class="avatar-container" id="avatar-container">
+        <img src="/avatar.jpeg" class="avatar-image" alt="Mao Yanfei" id="avatar-preview-trigger" style="cursor: pointer;">
+        <div class="avatar-play-button" id="avatar-play-button">
+          <span class="play-icon">▶</span>
+          <span class="pause-icon" style="display: none;">❚❚</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Avatar Preview Modal -->
+    <div id="avatar-modal" class="avatar-modal" style="display: none;">
+      <div class="avatar-modal-content">
+        <span class="avatar-modal-close">&times;</span>
+        <img src="/avatar.jpeg" class="avatar-modal-image" alt="Mao Yanfei">
+      </div>
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">毛艳飞</a>
+  </div>
+  <div class="masthead-tagline">
+    <small>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="/assets/images/wechat-qr.jpg" data-qr-code="true">
+            <i class="fab fa-weixin" title="Wechat"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="/assets/images/qq-qr.jpg" data-qr-code="true">
+            <i class="fab fa-qq" title="QQ"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:415850136@qq.com" >
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li><li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="https://github.com/maoyanfei" >
+            <i class="fab fa-github" title="GitHub"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+
+<!-- QR Code Modal -->
+<div id="qr-modal" class="qr-modal" style="display: none;">
+  <div class="qr-modal-content">
+    <span class="qr-modal-close">&times;</span>
+    <img src="" class="qr-modal-image" alt="QR Code">
+    <p class="qr-modal-title"></p>
+  </div>
+</div>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <article class="post"><div class="back-link" style="margin-bottom: 1rem;"><a href="/tags/" class="btn btn-sm"><i class="fas fa-arrow-left"></i> 返回项目</a></div><h1 class="post-title">野村证券集团商业智能项目（Nomura BI）</h1>
+  <div class="post-meta"><time datetime="2026-05-22T22:34:00+08:00" itemprop="datePublished">22 May 2026</time><span> • </span>
+      
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          毛艳飞
+        </span></div>
+
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nomura-bi-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #e0e0e0;
+  }
+
+  /* ===== Header Dashboard ===== */
+  .bi-dashboard {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    padding: 3rem 2rem;
+    margin: 0 0 3rem 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+  }
+
+  .bi-dashboard .shimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      80deg,
+      transparent 0px,
+      rgba(255, 255, 255, 0.03) 40px,
+      rgba(255, 255, 255, 0.08) 80px,
+      rgba(255, 255, 255, 0.14) 120px,
+      rgba(255, 255, 255, 0.08) 160px,
+      rgba(255, 255, 255, 0.03) 200px,
+      transparent 240px
+    );
+    animation: ripple 60s linear infinite reverse;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  @keyframes ripple {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .bi-dashboard::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .bi-dashboard::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(59, 130, 246, 0.05);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite reverse;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(20px); }
+  }
+
+  .bi-header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    animation: slideDown 0.8s ease;
+  }
+
+  .bi-header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: -1px;
+  }
+
+  .bi-header p {
+    font-size: 1.1rem;
+    opacity: 0.92;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ===== KPI Cards ===== */
+  .kpi-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  .kpi-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(37, 99, 235, 0.08) 100%);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(59, 130, 246, 0.5);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.15), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .kpi-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.25);
+    border-color: #2563eb;
+  }
+
+  .kpi-card:hover::before {
+    left: 100%;
+  }
+
+  .kpi-label {
+    font-size: 1rem;
+    color: #93c5fd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .kpi-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .kpi-card:hover .kpi-value {
+    transform: scale(1.15);
+    color: #93c5fd;
+  }
+
+  .kpi-desc {
+    font-size: 0.85rem;
+    color: #bfdbfe;
+    line-height: 1.5;
+  }
+
+  /* ===== Section Headers ===== */
+  .section-header {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #93c5fd;
+    margin: 3rem 0 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #2c5a9e;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    animation: slideInLeft 0.6s ease;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* ===== Background Section ===== */
+  .bg-section {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.06) 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 5px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .bg-section.animate-in {
+    animation: bgSectionFadeIn 0.8s ease forwards;
+  }
+
+  .bg-subsection {
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bg-subsection.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .problem-list li, .solution-list li {
+    opacity: 0;
+    transform: translateX(-15px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .problem-list li.animate-in, .solution-list li.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @keyframes bgSectionFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .bg-subsection:last-child {
+    margin-bottom: 0;
+  }
+
+  .bg-subsection h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #93c5fd;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .bg-subsection p {
+    color: #d0d0d0;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+
+  .problem-list, .solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .problem-list li, .solution-list li {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    position: relative;
+    color: #d0d0d0;
+    line-height: 1.6;
+  }
+
+  .problem-list li::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .solution-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  /* ===== Tech Stack ===== */
+  .tech-chart {
+    background: transparent;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+  }
+
+  .tech-chart-body {
+    display: flex;
+  }
+
+  .tech-chart-yaxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 110px;
+    padding-right: 0.5rem;
+    border-right: 2px solid #94a3b8;
+  }
+
+  .tech-bar-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: right;
+    white-space: nowrap;
+    padding: 0.35rem 0;
+  }
+
+  .tech-chart-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 0.5rem;
+  }
+
+  .tech-chart-grid {
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    pointer-events: none;
+  }
+
+  .tech-chart-grid-line {
+    flex: 1;
+    border-right: 1px dashed #cbd5e1;
+    position: relative;
+  }
+
+  .tech-chart-grid-line:last-child {
+    border-right: none;
+  }
+
+  .tech-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.35rem 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .tech-bar:hover {
+    background: rgba(59, 130, 246, 0.1);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .tech-bar:hover .tech-bar-fill {
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+  }
+
+  .tech-bar:hover .tech-bar-value {
+    color: #93c5fd !important;
+    transform: scale(1.1);
+  }
+
+  .tech-bar-value {
+    transition: all 0.3s ease;
+  }
+
+  .tech-bar-track {
+    flex: 1;
+    height: 24px;
+    background: transparent;
+    position: relative;
+  }
+
+  .tech-bar-fill {
+    height: 100%;
+    border-radius: 4px 12px 12px 4px;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    width: 0%;
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tech-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      80deg,
+      transparent 0px,
+      rgba(255, 255, 255, 0.05) 20px,
+      rgba(255, 255, 255, 0.12) 40px,
+      rgba(255, 255, 255, 0.05) 60px,
+      transparent 80px
+    );
+    animation: barShimmer 6s linear infinite reverse;
+  }
+
+  @keyframes barShimmer {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .tech-bar-value {
+    min-width: 32px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    text-align: left;
+  }
+
+  .tech-chart-xaxis {
+    display: flex;
+    margin-left: 110px;
+    padding-left: 0.5rem;
+    border-top: 2px solid #94a3b8;
+  }
+
+  .tech-chart-tick {
+    flex: 1;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #64748b;
+    padding-top: 0.4rem;
+    font-weight: 500;
+  }
+
+  .tech-chart-axis-label {
+    font-size: 0.7rem;
+    color: #64748b;
+    padding-top: 0.4rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+  }
+
+  /* ===== Responsibilities ===== */
+  .responsibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .responsibility-card {
+  .responsibility-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .responsibility-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .responsibility-card:hover {
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.25);
+    border-color: #2563eb;
+  }
+
+  .responsibility-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .resp-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+  }
+
+  .resp-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #93c5fd;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .resp-desc {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .resp-progress {
+    height: 6px;
+    background: #3a3a3a;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .resp-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 3px;
+    animation: fillProgress 1.5s ease forwards;
+  }
+
+  @keyframes fillProgress {
+    from {
+      width: 0;
+    }
+  }
+
+  /* ===== Achievements ===== */
+  .achievement-container {
+    margin: 2rem 0;
+  }
+
+  .achievement-item {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid rgba(59, 130, 246, 0.6);
+    transition: all 0.3s ease;
+    animation: slideInUp 0.6s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .achievement-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2);
+  }
+
+  .achievement-item strong {
+    color: #60a5fa;
+    font-weight: 700;
+  }
+
+  .achievement-item::before {
+    content: '★';
+    color: #3b82f6;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  /* ===== Growth Section ===== */
+  .growth-section {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+  }
+
+  .growth-subsection {
+    margin-bottom: 2rem;
+  }
+
+  .growth-subsection:last-child {
+    margin-bottom: 0;
+  }
+
+  .growth-subsection h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #93c5fd;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2c5a9e;
+  }
+
+  .growth-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .growth-list li {
+    padding: 0.8rem 0 0.8rem 2rem;
+    position: relative;
+    color: #d0d0d0;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .growth-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .growth-text {
+    color: #d0d0d0;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .bi-dashboard {
+      padding: 2rem 1.5rem;
+      margin: -1.5rem -1.5rem 2rem -1.5rem;
+    }
+
+    .bi-header h1 {
+      font-size: 2rem;
+    }
+
+    .kpi-cards {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .tech-chart-yaxis {
+      min-width: 85px;
+    }
+
+    .tech-chart-xaxis {
+      margin-left: 85px;
+    }
+
+    .tech-bar-label {
+      font-size: 0.75rem;
+    }
+
+    .responsibility-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-header {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+
+<div class="nomura-bi-page">
+  <!-- Header Dashboard -->
+  <div class="bi-dashboard">
+    <div class="shimmer"></div>
+    <div class="bi-header">
+      <h1>📊 野村证券商业智能平台</h1>
+      <p>Nomura BI - Global Market Data Visualization System</p>
+    </div>
+  </div>
+
+  <!-- KPI Overview -->
+  <div class="kpi-cards">
+    <div class="kpi-card">
+      <span class="kpi-label">项目周期</span>
+      <span class="kpi-value" data-target="16" data-suffix="&lt;span style='font-size:0.5em;font-weight:400'&gt;个月&lt;/span&gt;">16<span style="font-size:0.5em;font-weight:400">个月</span></span>
+      <span class="kpi-desc">(2021.11 - 2023.01)</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-label">效率提升</span>
+      <span class="kpi-value" data-target="60" data-suffix="%+">60%+</span>
+      <span class="kpi-desc">工作效率提升</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-label">数据更新</span>
+      <span class="kpi-value">分钟级</span>
+      <span class="kpi-desc">由小时级优化</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-label">覆盖范围</span>
+      <span class="kpi-value">全球</span>
+      <span class="kpi-desc">跨时区交易支撑</span>
+    </div>
+  </div>
+
+  <!-- Background Section -->
+  <div class="section-header">🎯 项目背景</div>
+  
+  <div class="bg-section">
+    <div class="bg-subsection">
+      <h4>业务现状</h4>
+      <p>野村证券 Wholesale 全球市场部（GM）主营股票、跨境衍生品等机构交易业务，业务团队需高频监控市场行情与交易数据。</p>
+    </div>
+
+    <div class="bg-subsection">
+      <h4>核心痛点</h4>
+      <ul class="problem-list">
+        <li>数据分散，来源不统一，缺乏统一口径</li>
+        <li>依赖人工汇总，流程低效，耗时耗力</li>
+        <li>同步滞后，无法支撑实时交易决策</li>
+        <li>无法满足风险监控及业务复盘需求</li>
+      </ul>
+    </div>
+
+    <div class="bg-subsection">
+      <h4>解决方案</h4>
+      <p>✅ 搭建标准化、自动化的金融数据可视化看板体系，统一数据口径，实现分钟级实时更新，为全球机构交易业务提供精准数据支撑。</p>
+    </div>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="section-header">⚙️ 技术架构</div>
+  <div class="tech-chart">
+    <div class="tech-chart-body">
+      <div class="tech-chart-yaxis">
+        <span class="tech-bar-label">🐍 Python</span>
+        <span class="tech-bar-label">🐼 Pandas</span>
+        <span class="tech-bar-label">📊 PowerBI</span>
+        <span class="tech-bar-label">🗃️ SQL Server</span>
+        <span class="tech-bar-label">🧊 SSAS Cube</span>
+        <span class="tech-bar-label">🐬 MySQL</span>
+        <span class="tech-bar-label">🟦 SharePoint</span>
+        <span class="tech-bar-label">📈 Excel</span>
+        <span class="tech-bar-label">📧 Outlook</span>
+      </div>
+      <div class="tech-chart-area">
+        <div class="tech-chart-grid">
+          <div class="tech-chart-grid-line"></div>
+          <div class="tech-chart-grid-line"></div>
+          <div class="tech-chart-grid-line"></div>
+          <div class="tech-chart-grid-line"></div>
+          <div class="tech-chart-grid-line"></div>
+        </div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="100"></div></div><span class="tech-bar-value">100%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="80"></div></div><span class="tech-bar-value">80%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="80"></div></div><span class="tech-bar-value">80%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="50"></div></div><span class="tech-bar-value">50%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="50"></div></div><span class="tech-bar-value">50%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="80"></div></div><span class="tech-bar-value">80%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="50"></div></div><span class="tech-bar-value">50%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="70"></div></div><span class="tech-bar-value">70%</span></div>
+        <div class="tech-bar"><div class="tech-bar-track"><div class="tech-bar-fill" data-value="50"></div></div><span class="tech-bar-value">50%</span></div>
+      </div>
+    </div>
+    <div class="tech-chart-xaxis">
+      <span class="tech-chart-tick">0</span>
+      <span class="tech-chart-tick">20</span>
+      <span class="tech-chart-tick">40</span>
+      <span class="tech-chart-tick">60</span>
+      <span class="tech-chart-tick">80</span>
+      <span class="tech-chart-tick">100</span>
+      <span class="tech-chart-axis-label">使用占比 (%)</span>
+    </div>
+  </div>
+
+  <!-- Responsibilities -->
+  <div class="section-header">👨‍💻 核心职责与贡献</div>
+  
+  <div class="responsibility-grid">
+    <div class="responsibility-card">
+      <div class="resp-number">①</div>
+      <div class="resp-title">BI 报表体系搭建</div>
+      <div class="resp-desc">搭建全维度证券交易行情报表体系，覆盖昨收/今开、日内高低价、涨跌幅、成交量、成交额等基础指标，拓展盘口流动性、机构持仓等高阶维度。</div>
+      <div class="resp-progress">
+        <div class="resp-progress-bar" style="width: 95%"></div>
+      </div>
+    </div>
+
+    <div class="responsibility-card">
+      <div class="resp-number">②</div>
+      <div class="resp-title">数据链路自动化</div>
+      <div class="resp-desc">完成数据抽取、清洗、转换、建模全流程开发，优化同步逻辑，实现行情数据分钟级自动更新，搭建数据校验规则。</div>
+      <div class="resp-progress">
+        <div class="resp-progress-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <div class="responsibility-card">
+      <div class="resp-number">③</div>
+      <div class="resp-title">可视化与交互优化</div>
+      <div class="resp-desc">面向交易员、风控、管理层等核心用户，适配做市、跨境交易业务场景，优化图表展示、多维筛选功能。</div>
+      <div class="resp-progress">
+        <div class="resp-progress-bar" style="width: 88%"></div>
+      </div>
+    </div>
+
+    <div class="responsibility-card">
+      <div class="resp-number">④</div>
+      <div class="resp-title">运维支撑与迭代</div>
+      <div class="resp-desc">负责报表日常运维与问题快速响应，保障 7×24 小时跨时区交易数据服务稳定，持续迭代新增功能。</div>
+      <div class="resp-progress">
+        <div class="resp-progress-bar" style="width: 92%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievements -->
+  <div class="section-header">📈 项目成果 &amp; 业务价值</div>
+  
+  <div class="achievement-container">
+    <div class="achievement-item">
+      <strong>自动化替代</strong> - 搭建自动化金融行情 BI 报表体系，替代传统人工 Excel 汇总，缩减 <strong style="color: #667eea;">60%+</strong> 数据整理工时，显著提升交易团队工作效率
+    </div>
+    <div class="achievement-item">
+      <strong>实时性优化</strong> - 落地标准化数据校验与更新机制，将数据延迟从<strong style="color: #667eea;">小时级优化至分钟级</strong>，为做市报价、日内交易、风险对冲提供精准实时数据支撑
+    </div>
+    <div class="achievement-item">
+      <strong>业务支撑</strong> - 完善多维可视化分析能力，助力团队高效完成市场研判、交易复盘与流动性风控，有效支撑二级市场交易、结构化衍生品等核心业务落地
+    </div>
+    <div class="achievement-item">
+      <strong>全球覆盖</strong> - 适配跨境机构交易场景，支撑全球机构业务，实现跨时区交易数据的统一管理与实时更新
+    </div>
+  </div>
+
+  <!-- Growth & Learning -->
+  <div class="section-header">💡 个人成长与收获</div>
+  
+  <div class="growth-section">
+    <div class="growth-subsection">
+      <h4>职业发展的转折点</h4>
+      <p class="growth-text">这个项目标志着我从<strong>参与</strong>项目到<strong>独立负责</strong>项目的成长蜕变。2021 年进入野村后，我获得了前所未有的信任和话语权，在技术选型、架构设计、开发流程、项目迭代等诸多方面实现了职业发展的跨越。这是我从初级工程师向高级工程师发展过程中最重要的里程碑。</p>
+    </div>
+
+    <div class="growth-subsection">
+      <h4>技术深度与广度</h4>
+      <ul class="growth-list">
+        <li>后端技术 - 选择 Python 作为主力语言，深入学习其数据处理优势</li>
+        <li>数据工程 - 接触多源数据库、ETL 全流程，完成复杂的数据建模</li>
+        <li>BI 平台 - 深入学习 Power BI 报表开发，掌握从需求到上线的完整流程</li>
+        <li>架构思维 - 在金融交易场景中实践系统性设计和问题解决能力</li>
+      </ul>
+    </div>
+
+    <div class="growth-subsection">
+      <h4>国际化协作能力</h4>
+      <p class="growth-text">野村全球化的工作环境让我与来自印度、美国、日本等不同国家的团队成员紧密协作。部门领导来自印度，项目经理来自美国，产品、运维等团队成员来自世界各地。通过全英文工作场景，我不仅提升了语言沟通能力，更重要的是学会了在跨文化背景下的有效沟通与协调，这成为了我职业生涯中最宝贵的财富。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // KPI 计数动画
+  const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // 监听 KPI 卡片
+  document.querySelectorAll('.kpi-card').forEach(card => {
+    observer.observe(card);
+  });
+
+  // 监听责任卡片
+  document.querySelectorAll('.responsibility-card').forEach(card => {
+    observer.observe(card);
+  });
+
+  // 监听成就项
+  document.querySelectorAll('.achievement-item').forEach(item => {
+    observer.observe(item);
+  });
+
+  // 技术栈柱状图动画 - 每次进入视口重新播放
+  const techChart = document.querySelector('.tech-chart');
+  const techBars = document.querySelectorAll('.tech-bar-fill');
+  const techObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 先重置所有柱状条为0
+        techBars.forEach((fill, index) => {
+          fill.style.transition = 'none';
+          fill.style.width = '0%';
+        });
+        // 强制重绘后逐个展开
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            techBars.forEach((fill, index) => {
+              const value = fill.getAttribute('data-value');
+              fill.style.transition = `width 1.2s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.08}s`;
+              fill.style.width = value + '%';
+            });
+          });
+        });
+      } else {
+        // 离开视口时重置为0，为下次进入做准备
+        techBars.forEach(fill => {
+          fill.style.transition = 'none';
+          fill.style.width = '0%';
+        });
+      }
+    });
+  }, { threshold: 0.2 });
+  if (techChart) techObserver.observe(techChart);
+
+  // 进度条动画
+  const progBars = document.querySelectorAll('.resp-progress-bar');
+  progBars.forEach((bar, index) => {
+    const width = bar.style.width;
+    bar.style.width = '0';
+    setTimeout(() => {
+      bar.style.transition = 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+      bar.style.width = width;
+    }, 200 + index * 100);
+  });
+
+  // 平滑滚动
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+});
+
+// 添加浮动动画关键帧
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+  }
+
+  .tech-badge:active {
+    animation: float 0.6s ease-in-out !important;
+  }
+`;
+document.head.appendChild(style);
+
+// KPI数字滚动进入视口递增动画
+const kpiContainer = document.querySelector('.kpi-grid') || document.querySelector('.kpi-cards');
+const kpiCards = document.querySelectorAll('.kpi-card');
+
+function animateKPIs() {
+  kpiCards.forEach((card, i) => {
+    const valueEl = card.querySelector('.kpi-value[data-target]');
+    if (!valueEl) return;
+    const target = parseInt(valueEl.getAttribute('data-target'));
+    const suffix = valueEl.getAttribute('data-suffix') || '';
+    let current = 0;
+    const duration = 1200;
+    const step = target / (duration / 16);
+
+    setTimeout(() => {
+      valueEl.innerHTML = '0' + suffix;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        valueEl.innerHTML = Math.round(current) + suffix;
+      }, 16);
+    }, i * 150);
+  });
+}
+
+if (kpiContainer) {
+  const kpiObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateKPIs();
+      } else {
+        // 离开视口时重置为0，为下次进入做准备
+        kpiCards.forEach(card => {
+          const valueEl = card.querySelector('.kpi-value[data-target]');
+          if (!valueEl) return;
+          const suffix = valueEl.getAttribute('data-suffix') || '';
+          valueEl.innerHTML = '0' + suffix;
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  kpiObserver.observe(kpiContainer);
+} else {
+  // fallback: 如果找不到容器，直接对每个card观察
+  const kpiObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const valueEl = entry.target.querySelector('.kpi-value[data-target]');
+        if (!valueEl) return;
+        const target = parseInt(valueEl.getAttribute('data-target'));
+        const suffix = valueEl.getAttribute('data-suffix') || '';
+        let current = 0;
+        const duration = 250;
+        const step = target / (duration / 16);
+        valueEl.innerHTML = '0' + suffix;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          valueEl.innerHTML = Math.round(current) + suffix;
+        }, 16);
+      } else {
+        const valueEl = entry.target.querySelector('.kpi-value[data-target]');
+        if (!valueEl) return;
+        const suffix = valueEl.getAttribute('data-suffix') || '';
+        valueEl.innerHTML = '0' + suffix;
+      }
+    });
+  }, { threshold: 0.3 });
+  kpiCards.forEach(card => kpiObserver.observe(card));
+}
+
+// 项目背景区域滚动动画
+const bgSection = document.querySelector('.bg-section');
+if (bgSection) {
+  const bgSubsections = bgSection.querySelectorAll('.bg-subsection');
+  const bgListItems = bgSection.querySelectorAll('.problem-list li, .solution-list li');
+
+  const bgObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 整体容器淡入
+        bgSection.classList.add('animate-in');
+
+        // 子区域依次出现
+        bgSubsections.forEach((sub, i) => {
+          setTimeout(() => {
+            sub.classList.add('animate-in');
+          }, 200 + i * 200);
+        });
+
+        // 列表项依次滑入
+        bgListItems.forEach((li, i) => {
+          setTimeout(() => {
+            li.classList.add('animate-in');
+          }, 600 + i * 120);
+        });
+      } else {
+        // 离开视口时重置，为下次进入做准备
+        bgSection.classList.remove('animate-in');
+        bgSubsections.forEach(sub => sub.classList.remove('animate-in'));
+        bgListItems.forEach(li => li.classList.remove('animate-in'));
+      }
+    });
+  }, { threshold: 0.2 });
+  bgObserver.observe(bgSection);
+}
+</script>
+
+
+
+  
+    
+      <div class="post-tags-section">
+  <i class="post-tags-icon fas fa-tags"></i>
+  <ul class="post-tags"><li>
+        <a class="post-tag" href="/tags/#bi商业智能">BI商业智能</a></li></ul>
+</div>
+
+  
+
+  
+</article>
+
+
+<aside class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      
+      
+      <li>
+        <a href="/work/2020/09/29/welcome-to-not-pure-poole/">
+          Welcome to Not Pure Poole
+          <small><time datetime="2020-09-29T23:18:00+08:00">29 Sep 2020</time></small>
+        </a>
+      </li>
+      
+    
+  </ul>
+</aside>
+
+
+</main>
+
+<footer class="footer"><small>
+    &copy; 2020&nbsp;-&nbsp;2026 <a href="https://maoyanfei.github.io/">Mao Yanfei</a>. All rights reserved.
+    Powered by <a href="https://jekyllcn.com">Jekyll</a> & <a href="https://github.com/maoyanfei/maoyanfei.github.io">MYF</a>.
+  </small>
+</footer>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'auto'  // 改为 auto，避免闪烁
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+<script src="/assets/js/avatar-preview.js"></script>
+    <script src="/assets/js/qr-code-modal.js"></script>
+    <script src="/assets/js/snow.js"></script></body>
+</html>
