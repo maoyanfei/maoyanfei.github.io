@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://192.168.1.3:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.1.3:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-06-01T23:44:11+08:00</updated><id>http://192.168.1.3:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">野村证券集团商业智能项目（Nomura BI）</title><link href="http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/" rel="alternate" type="text/html" title="野村证券集团商业智能项目（Nomura BI）" /><published>2026-05-22T22:34:00+08:00</published><updated>2026-05-22T22:34:00+08:00</updated><id>http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE</id><content type="html" xml:base="http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/"><![CDATA[<style>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://192.168.1.3:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.1.3:4000/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-06-02T23:28:15+08:00</updated><id>http://192.168.1.3:4000/feed.xml</id><title type="html">毛艳飞</title><subtitle>不知名计算机领域从业人员|未认证高级软件工程师|PMP项目管理专业资格人士却还在一线搬砖的新生代农民工</subtitle><author><name>Mao Yanfei</name><email>415850136@qq.com</email></author><entry><title type="html">野村证券集团商业智能项目（Nomura BI）</title><link href="http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/" rel="alternate" type="text/html" title="野村证券集团商业智能项目（Nomura BI）" /><published>2026-05-22T22:34:00+08:00</published><updated>2026-05-22T22:34:00+08:00</updated><id>http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE</id><content type="html" xml:base="http://192.168.1.3:4000/project/2026/05/22/%E9%87%8E%E6%9D%91%E8%AF%81%E5%88%B8%E9%9B%86%E5%9B%A2%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE/"><![CDATA[<style>
   * {
     margin: 0;
     padding: 0;
@@ -471,12 +471,11 @@
   /* ===== Responsibilities ===== */
   .responsibility-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 2rem 0;
   }
 
-  .responsibility-card {
   .responsibility-card {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
     border: 2px solid rgba(59, 130, 246, 0.4);
@@ -486,12 +485,17 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(40px);
   }
-    border-radius: 12px;
-    padding: 2rem;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
+
+  .responsibility-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .responsibility-card::before {
@@ -516,18 +520,25 @@
     transform: scaleX(1);
   }
 
+  .resp-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .resp-number {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 48px;
     height: 48px;
+    min-width: 48px;
     background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
     color: white;
     border-radius: 50%;
     font-weight: 800;
     font-size: 1.4rem;
-    margin-bottom: 1rem;
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
   }
 
@@ -535,7 +546,6 @@
     font-size: 1.2rem;
     font-weight: 700;
     color: #93c5fd;
-    margin-bottom: 0.8rem;
     line-height: 1.4;
   }
 
@@ -577,9 +587,17 @@
     margin-bottom: 1rem;
     border-radius: 8px;
     border-left: 4px solid rgba(59, 130, 246, 0.6);
-    transition: all 0.3s ease;
-    animation: slideInUp 0.6s ease;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s ease;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  .achievement-item.animate {
+    opacity: 1;
+    transform: translateX(0);
   }
 
   @keyframes slideInUp {
@@ -611,9 +629,93 @@
     font-size: 1.1rem;
   }
 
+  /* ===== Demo Project ===== */
+  .demo-section {
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .demo-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .demo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(37, 99, 235, 0.1) 100%);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  }
+
+  .demo-header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #93c5fd;
+  }
+
+  .demo-header-title .demo-icon {
+    font-size: 1.3rem;
+  }
+
+  .demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  }
+
+  .demo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.5);
+  }
+
+  .demo-link .link-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .demo-link:hover .link-arrow {
+    transform: translateX(3px);
+  }
+
+  .demo-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    background: #1a1a2e;
+  }
+
+  .demo-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
   /* ===== Growth Section ===== */
   .growth-section {
-    background: rgba(30, 30, 30, 0.6);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.06) 100%);
     border-radius: 12px;
     padding: 2.5rem;
     margin: 2rem 0;
@@ -622,6 +724,15 @@
 
   .growth-subsection {
     margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .growth-subsection.animate {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .growth-subsection:last-child {
@@ -813,8 +924,10 @@
   
   <div class="responsibility-grid">
     <div class="responsibility-card">
-      <div class="resp-number">①</div>
-      <div class="resp-title">BI 报表体系搭建</div>
+      <div class="resp-header">
+        <div class="resp-number">①</div>
+        <div class="resp-title">BI 报表体系搭建</div>
+      </div>
       <div class="resp-desc">搭建全维度证券交易行情报表体系，覆盖昨收/今开、日内高低价、涨跌幅、成交量、成交额等基础指标，拓展盘口流动性、机构持仓等高阶维度。</div>
       <div class="resp-progress">
         <div class="resp-progress-bar" style="width: 95%"></div>
@@ -822,8 +935,10 @@
     </div>
 
     <div class="responsibility-card">
-      <div class="resp-number">②</div>
-      <div class="resp-title">数据链路自动化</div>
+      <div class="resp-header">
+        <div class="resp-number">②</div>
+        <div class="resp-title">数据链路自动化</div>
+      </div>
       <div class="resp-desc">完成数据抽取、清洗、转换、建模全流程开发，优化同步逻辑，实现行情数据分钟级自动更新，搭建数据校验规则。</div>
       <div class="resp-progress">
         <div class="resp-progress-bar" style="width: 90%"></div>
@@ -831,8 +946,10 @@
     </div>
 
     <div class="responsibility-card">
-      <div class="resp-number">③</div>
-      <div class="resp-title">可视化与交互优化</div>
+      <div class="resp-header">
+        <div class="resp-number">③</div>
+        <div class="resp-title">可视化与交互优化</div>
+      </div>
       <div class="resp-desc">面向交易员、风控、管理层等核心用户，适配做市、跨境交易业务场景，优化图表展示、多维筛选功能。</div>
       <div class="resp-progress">
         <div class="resp-progress-bar" style="width: 88%"></div>
@@ -840,8 +957,10 @@
     </div>
 
     <div class="responsibility-card">
-      <div class="resp-number">④</div>
-      <div class="resp-title">运维支撑与迭代</div>
+      <div class="resp-header">
+        <div class="resp-number">④</div>
+        <div class="resp-title">运维支撑与迭代</div>
+      </div>
       <div class="resp-desc">负责报表日常运维与问题快速响应，保障 7×24 小时跨时区交易数据服务稳定，持续迭代新增功能。</div>
       <div class="resp-progress">
         <div class="resp-progress-bar" style="width: 92%"></div>
@@ -867,13 +986,31 @@
     </div>
   </div>
 
+  <!-- Demo Project -->
+  <div class="section-header">💻 示例项目</div>
+
+  <div class="demo-section">
+    <div class="demo-header">
+      <div class="demo-header-title">
+        <span class="demo-icon">🎨</span>
+        <span>注：内部数据保密协议限制，不展示真实项目报表，此处示例为PowerBI中国社区作品</span>
+      </div>
+      <a class="demo-link" href="https://app.powerbi.com/view?r=eyJrIjoiZTEwZmU5NmMtYmVmZC00ZjkyLTlhMzktMGUyZTM5YWVjYWE5IiwidCI6IjdlMTczODMxLThkZDYtNDlkZC1hY2Q1LTljZTY3ZmQ1ODM5MCIsImMiOjZ9&amp;pageName=ReportSection1f9122da2a5df5047d82" target="_blank" rel="noopener">
+        新窗口查看 <span class="link-arrow">→</span>
+      </a>
+    </div>
+    <div class="demo-iframe-wrapper">
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTEwZmU5NmMtYmVmZC00ZjkyLTlhMzktMGUyZTM5YWVjYWE5IiwidCI6IjdlMTczODMxLThkZDYtNDlkZC1hY2Q1LTljZTY3ZmQ1ODM5MCIsImMiOjZ9&amp;pageName=ReportSection1f9122da2a5df5047d82" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
   <!-- Growth & Learning -->
   <div class="section-header">💡 个人成长与收获</div>
   
   <div class="growth-section">
     <div class="growth-subsection">
       <h4>职业发展的转折点</h4>
-      <p class="growth-text">这个项目标志着我从<strong>参与</strong>项目到<strong>独立负责</strong>项目的成长蜕变。2021 年进入野村后，我获得了前所未有的信任和话语权，在技术选型、架构设计、开发流程、项目迭代等诸多方面实现了职业发展的跨越。这是我从初级工程师向高级工程师发展过程中最重要的里程碑。</p>
+      <p class="growth-text">这个项目标志着我从<strong>参与</strong>项目到<strong>独立负责</strong>项目的成长蜕变。2021 年进入野村BI项目后，我获得了前所未有的信任和话语权，在技术选型、架构设计、开发流程、项目迭代等诸多方面实现了职业发展的跨越。这是我从初级工程师向高级工程师发展过程中最重要的里程碑。</p>
     </div>
 
     <div class="growth-subsection">
@@ -894,8 +1031,17 @@
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // KPI 计数动画
+// 野村证券BI项目动画 - 封装为全局函数，供 PJAX 调用
+window.initNomuraAnimations = function() {
+  console.log('🔄 Initializing Nomura BI project animations...');
+
+  // 清理之前的观察器（防止pjax切换后重复创建）
+  if (window._nomuraObservers) {
+    window._nomuraObservers.forEach(obs => obs.disconnect());
+  }
+  window._nomuraObservers = [];
+
+  // KPI 计数动画 - IntersectionObserver
   const observerOptions = {
     threshold: 0.5,
     rootMargin: '0px 0px -50px 0px'
@@ -909,20 +1055,101 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, observerOptions);
+  window._nomuraObservers.push(observer);
 
   // 监听 KPI 卡片
   document.querySelectorAll('.kpi-card').forEach(card => {
     observer.observe(card);
   });
 
-  // 监听责任卡片
-  document.querySelectorAll('.responsibility-card').forEach(card => {
-    observer.observe(card);
+  // 监听责任卡片 - 独立observer，支持逐个延迟动画
+  const respCards = document.querySelectorAll('.responsibility-card');
+  // pjax重新初始化时，先重置动画状态
+  respCards.forEach(card => {
+    card.classList.remove('animate');
+  });
+  const respObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 找到当前卡片在列表中的索引，用于延迟动画
+        const index = Array.from(respCards).indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('animate');
+        }, index * 150);
+      } else {
+        // 离开视口时移除动画，下次进入可重新播放
+        entry.target.classList.remove('animate');
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -30px 0px' });
+  window._nomuraObservers.push(respObserver);
+  respCards.forEach(card => {
+    respObserver.observe(card);
   });
 
-  // 监听成就项
-  document.querySelectorAll('.achievement-item').forEach(item => {
-    observer.observe(item);
+  // 监听成就项 - 独立observer，支持逐个延迟动画
+  const achItems = document.querySelectorAll('.achievement-item');
+  // pjax重新初始化时，先重置动画状态
+  achItems.forEach(item => {
+    item.classList.remove('animate');
+  });
+  const achObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = Array.from(achItems).indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('animate');
+        }, index * 150);
+      } else {
+        // 离开视口时移除动画，下次进入可重新播放
+        entry.target.classList.remove('animate');
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -30px 0px' });
+  window._nomuraObservers.push(achObserver);
+  achItems.forEach(item => {
+    achObserver.observe(item);
+  });
+
+  // 监听示例项目区块 - 独立observer
+  const demoSection = document.querySelector('.demo-section');
+  if (demoSection) {
+    demoSection.classList.remove('animate');
+    const demoObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        } else {
+          entry.target.classList.remove('animate');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+    window._nomuraObservers.push(demoObserver);
+    demoObserver.observe(demoSection);
+  }
+
+  // 监听成长子区块 - 独立observer，支持逐个延迟动画
+  const growthItems = document.querySelectorAll('.growth-subsection');
+  // pjax重新初始化时，先重置动画状态
+  growthItems.forEach(item => {
+    item.classList.remove('animate');
+  });
+  const growthObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = Array.from(growthItems).indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('animate');
+        }, index * 150);
+      } else {
+        // 离开视口时移除动画，下次进入可重新播放
+        entry.target.classList.remove('animate');
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -30px 0px' });
+  window._nomuraObservers.push(growthObserver);
+  growthItems.forEach(item => {
+    growthObserver.observe(item);
   });
 
   // 技术栈柱状图动画 - 每次进入视口重新播放
@@ -955,6 +1182,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, { threshold: 0.2 });
+  window._nomuraObservers.push(techObserver);
   if (techChart) techObserver.observe(techChart);
 
   // 进度条动画
@@ -978,79 +1206,39 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
 
-// 添加浮动动画关键帧
-const style = document.createElement('style');
-style.textContent = `
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-8px) rotate(2deg); }
-  }
-
-  .tech-badge:active {
-    animation: float 0.6s ease-in-out !important;
-  }
-`;
-document.head.appendChild(style);
-
-// KPI数字滚动进入视口递增动画
-const kpiContainer = document.querySelector('.kpi-grid') || document.querySelector('.kpi-cards');
-const kpiCards = document.querySelectorAll('.kpi-card');
-
-function animateKPIs() {
-  kpiCards.forEach((card, i) => {
-    const valueEl = card.querySelector('.kpi-value[data-target]');
-    if (!valueEl) return;
-    const target = parseInt(valueEl.getAttribute('data-target'));
-    const suffix = valueEl.getAttribute('data-suffix') || '';
-    let current = 0;
-    const duration = 1200;
-    const step = target / (duration / 16);
-
-    setTimeout(() => {
-      valueEl.innerHTML = '0' + suffix;
-      const timer = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          current = target;
-          clearInterval(timer);
-        }
-        valueEl.innerHTML = Math.round(current) + suffix;
-      }, 16);
-    }, i * 150);
-  });
-}
-
-if (kpiContainer) {
-  const kpiObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateKPIs();
-      } else {
-        // 离开视口时重置为0，为下次进入做准备
-        kpiCards.forEach(card => {
-          const valueEl = card.querySelector('.kpi-value[data-target]');
-          if (!valueEl) return;
-          const suffix = valueEl.getAttribute('data-suffix') || '';
-          valueEl.innerHTML = '0' + suffix;
-        });
+  // 添加浮动动画关键帧
+  if (!document.getElementById('nomura-float-style')) {
+    const style = document.createElement('style');
+    style.id = 'nomura-float-style';
+    style.textContent = `
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(2deg); }
       }
-    });
-  }, { threshold: 0.3 });
-  kpiObserver.observe(kpiContainer);
-} else {
-  // fallback: 如果找不到容器，直接对每个card观察
-  const kpiObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const valueEl = entry.target.querySelector('.kpi-value[data-target]');
-        if (!valueEl) return;
-        const target = parseInt(valueEl.getAttribute('data-target'));
-        const suffix = valueEl.getAttribute('data-suffix') || '';
-        let current = 0;
-        const duration = 250;
-        const step = target / (duration / 16);
+
+      .tech-badge:active {
+        animation: float 0.6s ease-in-out !important;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // KPI数字滚动进入视口递增动画
+  const kpiContainer = document.querySelector('.kpi-grid') || document.querySelector('.kpi-cards');
+  const kpiCards = document.querySelectorAll('.kpi-card');
+
+  function animateKPIs() {
+    kpiCards.forEach((card, i) => {
+      const valueEl = card.querySelector('.kpi-value[data-target]');
+      if (!valueEl) return;
+      const target = parseInt(valueEl.getAttribute('data-target'));
+      const suffix = valueEl.getAttribute('data-suffix') || '';
+      let current = 0;
+      const duration = 1200;
+      const step = target / (duration / 16);
+
+      setTimeout(() => {
         valueEl.innerHTML = '0' + suffix;
         const timer = setInterval(() => {
           current += step;
@@ -1060,52 +1248,113 @@ if (kpiContainer) {
           }
           valueEl.innerHTML = Math.round(current) + suffix;
         }, 16);
-      } else {
-        const valueEl = entry.target.querySelector('.kpi-value[data-target]');
-        if (!valueEl) return;
-        const suffix = valueEl.getAttribute('data-suffix') || '';
-        valueEl.innerHTML = '0' + suffix;
-      }
+      }, i * 150);
     });
-  }, { threshold: 0.3 });
-  kpiCards.forEach(card => kpiObserver.observe(card));
-}
+  }
 
-// 项目背景区域滚动动画
-const bgSection = document.querySelector('.bg-section');
-if (bgSection) {
-  const bgSubsections = bgSection.querySelectorAll('.bg-subsection');
-  const bgListItems = bgSection.querySelectorAll('.problem-list li, .solution-list li');
+  if (kpiContainer) {
+    const kpiObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateKPIs();
+        } else {
+          // 离开视口时重置为0，为下次进入做准备
+          kpiCards.forEach(card => {
+            const valueEl = card.querySelector('.kpi-value[data-target]');
+            if (!valueEl) return;
+            const suffix = valueEl.getAttribute('data-suffix') || '';
+            valueEl.innerHTML = '0' + suffix;
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    window._nomuraObservers.push(kpiObserver);
+    kpiObserver.observe(kpiContainer);
+  } else {
+    // fallback: 如果找不到容器，直接对每个card观察
+    const kpiObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const valueEl = entry.target.querySelector('.kpi-value[data-target]');
+          if (!valueEl) return;
+          const target = parseInt(valueEl.getAttribute('data-target'));
+          const suffix = valueEl.getAttribute('data-suffix') || '';
+          let current = 0;
+          const duration = 250;
+          const step = target / (duration / 16);
+          valueEl.innerHTML = '0' + suffix;
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            valueEl.innerHTML = Math.round(current) + suffix;
+          }, 16);
+        } else {
+          const valueEl = entry.target.querySelector('.kpi-value[data-target]');
+          if (!valueEl) return;
+          const suffix = valueEl.getAttribute('data-suffix') || '';
+          valueEl.innerHTML = '0' + suffix;
+        }
+      });
+    }, { threshold: 0.3 });
+    window._nomuraObservers.push(kpiObserver);
+    kpiCards.forEach(card => kpiObserver.observe(card));
+  }
 
-  const bgObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // 整体容器淡入
-        bgSection.classList.add('animate-in');
+  // 项目背景区域滚动动画
+  const bgSection = document.querySelector('.bg-section');
+  if (bgSection) {
+    const bgSubsections = bgSection.querySelectorAll('.bg-subsection');
+    const bgListItems = bgSection.querySelectorAll('.problem-list li, .solution-list li');
 
-        // 子区域依次出现
-        bgSubsections.forEach((sub, i) => {
-          setTimeout(() => {
-            sub.classList.add('animate-in');
-          }, 200 + i * 200);
-        });
+    const bgObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // 整体容器淡入
+          bgSection.classList.add('animate-in');
 
-        // 列表项依次滑入
-        bgListItems.forEach((li, i) => {
-          setTimeout(() => {
-            li.classList.add('animate-in');
-          }, 600 + i * 120);
-        });
-      } else {
-        // 离开视口时重置，为下次进入做准备
-        bgSection.classList.remove('animate-in');
-        bgSubsections.forEach(sub => sub.classList.remove('animate-in'));
-        bgListItems.forEach(li => li.classList.remove('animate-in'));
-      }
-    });
-  }, { threshold: 0.2 });
-  bgObserver.observe(bgSection);
-}
+          // 子区域依次出现
+          bgSubsections.forEach((sub, i) => {
+            setTimeout(() => {
+              sub.classList.add('animate-in');
+            }, 200 + i * 200);
+          });
+
+          // 列表项依次滑入
+          bgListItems.forEach((li, i) => {
+            setTimeout(() => {
+              li.classList.add('animate-in');
+            }, 600 + i * 120);
+          });
+        } else {
+          // 离开视口时重置，为下次进入做准备
+          bgSection.classList.remove('animate-in');
+          bgSubsections.forEach(sub => sub.classList.remove('animate-in'));
+          bgListItems.forEach(li => li.classList.remove('animate-in'));
+        }
+      });
+    }, { threshold: 0.2 });
+    window._nomuraObservers.push(bgObserver);
+    bgObserver.observe(bgSection);
+  }
+
+  console.log('✅ Nomura BI project animations initialized successfully');
+};
+
+// 首次加载时自动执行（浏览器会自然执行这段代码）
+(function() {
+  function init() {
+    setTimeout(window.initNomuraAnimations, 100);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>]]></content><author><name>毛艳飞</name></author><category term="project" /><category term="BI商业智能" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">思佰益海外汇款系统（SBI Remit）</title><link href="http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/" rel="alternate" type="text/html" title="思佰益海外汇款系统（SBI Remit）" /><published>2026-05-07T16:11:00+08:00</published><updated>2026-05-07T16:11:00+08:00</updated><id>http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://192.168.1.3:4000/project/2026/05/07/%E6%80%9D%E4%BD%B0%E7%9B%8A%E6%B5%B7%E5%A4%96%E6%B1%87%E6%AC%BE%E7%B3%BB%E7%BB%9F/"><![CDATA[<style>
 /* 赛博朋克风格样式 */
 /* .cyber-container {

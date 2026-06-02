@@ -334,6 +334,17 @@
         initializeQRCodeModal();
       }
       
+      // Re-initialize project page animations (PJAX callback)
+      if (typeof window.initNomuraAnimations === 'function') {
+        window.initNomuraAnimations();
+      }
+      if (typeof window.initGovScrollAnimation === 'function') {
+        window.initGovScrollAnimation();
+      }
+      if (typeof window.initTypewriterEffect === 'function') {
+        window.initTypewriterEffect();
+      }
+
       // Re-initialize any other dynamic features
       this.initializeCopyButtons();
       // Note: Hint icons use event delegation, no need to re-initialize
